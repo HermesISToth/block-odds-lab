@@ -5,6 +5,7 @@ Zero-cost launch kit for a Bitcoin lottery mining niche site.
 ## Current Shape
 
 - Static public site in `site/`
+- Installable PWA for Android and iPhone
 - Odds calculator with shareable presets
 - Draft content briefs in `content/`
 - Automation plan and starter data in `automation/` and `data/`

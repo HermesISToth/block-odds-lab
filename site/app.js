@@ -89,3 +89,11 @@ document.querySelectorAll("[data-preset]").forEach((button) => {
 });
 
 calculate();
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js").catch(() => {
+      // The calculator still works without offline caching.
+    });
+  });
+}
