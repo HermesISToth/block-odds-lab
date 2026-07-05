@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Block Odds Lab | Bitcoin Lottery Mining Calculator</title>
+    <meta name="description" content="Calculate your real Bitcoin solo mining odds, tune your lottery miner, and track gear worth buying.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Block Odds Lab home">
+        <span class="brand-mark">B</span>
+        <span>Block Odds Lab</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#calculator">Calculator</a>
+        <a href="#guides">Guides</a>
+        <a href="#alerts">Alerts</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Bitcoin lottery mining, without the hopium</p>
+          <h1>Know your real block odds before you chase the next terahash.</h1>
+          <p class="lede">
+            A practical calculator and gear guide for Bitaxe, NerdMiner, and solo mining hobbyists who want better decisions, cleaner tuning, and fewer wasted parts.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#calculator">Run the odds</a>
+            <a class="button secondary" href="#guides">Read the guides</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band">
+        <div>
+          <h2>Built for tiny miners with giant dreams</h2>
+          <p>
+            The average odds are brutal, but the setup still deserves good tools. Start with your hashrate, compare realistic time horizons, then decide whether more cooling, power, or hardware is actually worth it.
+          </p>
+        </div>
+        <dl class="stats-strip">
+          <div>
+            <dt>Free</dt>
+            <dd>No account, no login</dd>
+          </div>
+          <div>
+            <dt>Honest</dt>
+            <dd>Expected value, not hype</dd>
+          </div>
+          <div>
+            <dt>Useful</dt>
+            <dd>Gear and tuning next steps</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="calculator" class="section calculator-layout">
+        <div class="calculator-copy">
+          <p class="eyebrow">Solo block odds calculator</p>
+          <h2>How likely is your miner to find a block?</h2>
+          <p>
+            Enter your hashrate and the current network difficulty. The calculator estimates expected time, daily odds, monthly odds, yearly odds, and rough expected value before electricity.
+          </p>
+          <p class="note">
+            This uses the standard approximation: probability per hash is about 1 / (difficulty x 2^32). Real mining is random; averages are not promises.
+          </p>
+        </div>
+
+        <div class="tool-panel" aria-label="Bitcoin solo mining odds calculator">
+          <div class="field-grid">
+            <label>
+              Miner hashrate
+              <span class="input-row">
+                <input id="hashrate" type="number" min="0" step="0.01" value="1.2">
+                <select id="hashrate-unit" aria-label="Hashrate unit">
+                  <option value="1000000000">GH/s</option>
+                  <option value="1000000000000" selected>TH/s</option>
+                  <option value="1000000000000000">PH/s</option>
+                </select>
+              </span>
+            </label>
+            <label>
+              Network difficulty
+              <input id="difficulty" type="number" min="1" step="1000000000000" value="133869853540305">
+            </label>
+            <label>
+              BTC block reward
+              <input id="reward" type="number" min="0" step="0.00000001" value="3.125">
+            </label>
+            <label>
+              BTC price, USD
+              <input id="btc-price" type="number" min="0" step="100" value="62655">
+            </label>
+            <label>
+              Power draw, watts
+              <input id="watts" type="number" min="0" step="1" value="22">
+            </label>
+            <label>
+              Electricity, $/kWh
+              <input id="kwh" type="number" min="0" step="0.01" value="0.16">
+            </label>
+          </div>
+
+          <div class="preset-row" aria-label="Hashrate presets">
+            <button type="button" data-preset="0.06">60 GH/s</button>
+            <button type="button" data-preset="1.2">Bitaxe Gamma</button>
+            <button type="button" data-preset="1.8">Pushed Gamma</button>
+            <button type="button" data-preset="10">10 TH/s</button>
+          </div>
+
+          <div class="results" aria-live="polite">
+            <article>
+              <span>Expected time</span>
+              <strong id="expected-time">-</strong>
+            </article>
+            <article>
+              <span>Chance per day</span>
+              <strong id="daily-odds">-</strong>
+            </article>
+            <article>
+              <span>Chance per month</span>
+              <strong id="monthly-odds">-</strong>
+            </article>
+            <article>
+              <span>Chance per year</span>
+              <strong id="yearly-odds">-</strong>
+            </article>
+          </div>
+
+          <div class="ev-row">
+            <p><strong id="expected-btc">-</strong> expected BTC per year before fees and electricity.</p>
+            <p><strong id="power-cost">-</strong> estimated yearly electricity cost.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="guides" class="section guide-band">
+        <div class="section-heading">
+          <p class="eyebrow">First content cluster</p>
+          <h2>Guides that can become search traffic</h2>
+        </div>
+        <div class="guide-grid">
+          <article>
+            <span>Guide 01</span>
+            <h3>Bitaxe Gamma tuning without cooking the board</h3>
+            <p>Frequency, voltage, thermal limits, stability checks, and when to back down.</p>
+          </article>
+          <article>
+            <span>Guide 02</span>
+            <h3>Best low-cost upgrades for lottery miners</h3>
+            <p>Power supplies, cables, fans, meters, heatsinks, and where cheap parts become false economy.</p>
+          </article>
+          <article>
+            <span>Guide 03</span>
+            <h3>Solo pools compared for hobby miners</h3>
+            <p>What matters: uptime, payout rules, fees, latency, transparency, and block notification history.</p>
+          </article>
+          <article>
+            <span>Guide 04</span>
+            <h3>Lottery mining odds explained plainly</h3>
+            <p>Why one terahash is still tiny, why luck streaks happen, and what expected value really means.</p>
+          </article>
+          <article>
+            <span>Guide 05</span>
+            <h3>Bitaxe vs NerdMiner vs USB sticks</h3>
+            <p>A comparison article for beginners deciding whether they want learning, odds, or desk appeal.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="alerts" class="section alerts-layout">
+        <div>
+          <p class="eyebrow">Automation angle</p>
+          <h2>Weekly lottery mining watchlist</h2>
+          <p>
+            The newsletter hook: useful changes, not noise. Difficulty changes, firmware releases, price drops, restocks, pool issues, and one practical tuning note.
+          </p>
+        </div>
+        <form class="signup" id="signup-form">
+          <label>
+            Email
+            <input type="email" placeholder="you@example.com" disabled>
+          </label>
+          <button type="button" disabled>Coming after setup</button>
+          <p>No list provider is connected yet. This is the placeholder for a free-tier signup tomorrow.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Block Odds Lab is an experimental education project. Mining outcomes are random. Nothing here is financial advice.</p>
+      <p>Affiliate links may appear later after disclosures and program approval.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
