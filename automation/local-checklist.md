@@ -13,5 +13,9 @@
 - [ ] Choose a domain/brand only after sleeping on it.
 - [ ] Register domain before TikTok promo.
 - [ ] Add branded domain to first TikTok launch video CTA.
+- [ ] Replace sitemap and robots URLs with branded domain.
+- [ ] Add live contact email after forwarding is active.
+- [ ] Connect free email-list provider.
+- [ ] Replace disabled signup form with live signup.
 - [ ] Pick free hosting path.
 - [ ] Add affiliate disclosure language before any monetized links.

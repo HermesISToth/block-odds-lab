@@ -52,6 +52,7 @@ function formatDuration(seconds) {
 }
 
 function calculate() {
+  if (!els.hashrate || !els.unit || !els.difficulty) return;
   const hashrate = numberValue(els.hashrate) * numberValue(els.unit, 1);
   const difficulty = numberValue(els.difficulty);
   const reward = numberValue(els.reward);
@@ -76,23 +77,28 @@ function calculate() {
   els.powerCost.textContent = `$${yearlyPowerCost.toFixed(2)}`;
 }
 
-document.querySelectorAll("input, select").forEach((input) => {
-  input.addEventListener("input", calculate);
-});
-
-document.querySelectorAll("[data-preset]").forEach((button) => {
-  button.addEventListener("click", () => {
-    els.hashrate.value = button.dataset.preset;
-    els.unit.value = "1000000000000";
-    calculate();
+if (els.hashrate) {
+  document.querySelectorAll("input, select").forEach((input) => {
+    input.addEventListener("input", calculate);
   });
-});
 
-calculate();
+  document.querySelectorAll("[data-preset]").forEach((button) => {
+    button.addEventListener("click", () => {
+      els.hashrate.value = button.dataset.preset;
+      els.unit.value = "1000000000000";
+      calculate();
+    });
+  });
+
+  calculate();
+}
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./service-worker.js").catch(() => {
+    const manifestHref = document.querySelector("link[rel='manifest']")?.getAttribute("href") || "./manifest.webmanifest";
+    const manifestUrl = new URL(manifestHref, window.location.href);
+    const serviceWorkerUrl = new URL("service-worker.js", manifestUrl);
+    navigator.serviceWorker.register(serviceWorkerUrl).catch(() => {
       // The calculator still works without offline caching.
     });
   });

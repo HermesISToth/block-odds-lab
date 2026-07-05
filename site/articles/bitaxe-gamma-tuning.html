@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bitaxe Gamma Tuning Guide | Block Odds Lab</title>
+    <meta name="description" content="Tune a Bitaxe Gamma with frequency, voltage, temperature, fan, and stability checks.">
+    <meta name="theme-color" content="#0b0d10">
+    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../index.html"><span class="brand-mark">B</span><span>Block Odds Lab</span></a>
+      <nav><a href="../index.html#calculator">Calculator</a><a href="../index.html#guides">Guides</a><a href="../disclosure.html">Disclosure</a></nav>
+    </header>
+    <main>
+      <article class="section article-page">
+        <p class="eyebrow">Bitaxe Gamma</p>
+        <h1>Tune for stable hashrate, not screenshot hashrate</h1>
+        <p>The Bitaxe Gamma is a fun lottery miner because it is small, visible, and educational. Tuning it should be boring on purpose: raise hashrate slowly, watch heat and power, and keep the setting that survives real uptime.</p>
+        <div class="callout"><p>Start with a baseline. Record stock frequency, voltage, average hashrate, ASIC temp, VR temp, fan speed, input voltage, uptime, accepted shares, rejected shares, and error rate.</p></div>
+        <h2>Frequency first</h2>
+        <p>Increase frequency in small steps, then wait long enough to see whether the average hashrate follows. A setting is not better if it runs hot, reboots, or creates bad shares.</p>
+        <h2>Voltage second</h2>
+        <p>Voltage can stabilize higher frequency, but it also raises heat and power draw. Add the smallest voltage step that makes a meaningful stability difference.</p>
+        <h2>Watch the boring signals</h2>
+        <ul>
+          <li>Hashrate average stays close to expected hashrate.</li>
+          <li>Rejected shares stay near zero.</li>
+          <li>Uptime does not reset.</li>
+          <li>Fan is not pinned at 100% all day.</li>
+          <li>Input voltage does not sag hard under load.</li>
+        </ul>
+        <h2>Use the tuning log</h2>
+        <p>Download the free CSV log and record each setting before changing it again. Overnight stability is more useful than a five-minute peak.</p>
+        <p><a class="button primary" href="../downloads/bitaxe-tuning-log.csv" download>Download tuning log</a></p>
+      </article>
+    </main>
+    <footer><p>Mining outcomes are random. Nothing here is financial advice.</p></footer>
+    <script src="../app.js"></script>
+  </body>
+</html>
