@@ -11,5 +11,7 @@
 - [ ] Draft full article 1.
 - [ ] Draft full article 2.
 - [ ] Choose a domain/brand only after sleeping on it.
+- [ ] Register domain before TikTok promo.
+- [ ] Add branded domain to first TikTok launch video CTA.
 - [ ] Pick free hosting path.
 - [ ] Add affiliate disclosure language before any monetized links.
