@@ -1,0 +1,2 @@
+Date,Room Temp,Frequency MHz,Core Voltage mV,Average Hashrate TH/s,ASIC Temp C,VR Temp C,Fan Percent,Input Voltage,Power Watts,ASIC Errors,Rejected Shares,Uptime Hours,Pool,Notes
+2026-07-05,,525,1150,1.20,,,,22,,,,,"Baseline before tuning"
