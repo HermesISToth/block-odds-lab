@@ -2,11 +2,11 @@
 
 ## Ownership
 
-Logan is the sole investor for Block Odds Lab.
+The user is the sole investor for Block Odds Lab.
 
 ## Operating Rule
 
-OpenClaw can research, draft, build, test, automate, and prepare public-facing work. Actions that affect money, accounts, public commitments, sponsorships, affiliate relationships, or investor-level decisions require Logan's approval.
+OpenClaw can research, draft, build, test, automate, and prepare public-facing work. Actions that affect money, accounts, public commitments, sponsorships, affiliate relationships, or investor-level decisions require investor approval.
 
 ## Current Investment Status
 
@@ -14,4 +14,3 @@ OpenClaw can research, draft, build, test, automate, and prepare public-facing w
 - No domain has been purchased.
 - No affiliate accounts have been opened.
 - The first public version is live on free GitHub Pages.
-
