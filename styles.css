@@ -451,12 +451,6 @@ footer p:last-child {
   margin-bottom: 0;
 }
 
-.signup button:disabled,
-.signup input:disabled {
-  opacity: 0.62;
-  cursor: not-allowed;
-}
-
 footer {
   padding: 34px clamp(18px, 4vw, 52px);
   border-top: 1px solid var(--line);
