@@ -1,0 +1,50 @@
+{
+  "project": "Block Odds Lab",
+  "created": "2026-07-05",
+  "latestDefaults": {
+    "difficulty": 133869853540305,
+    "btcPriceUsd": 62715,
+    "sourceNotes": "Difficulty refreshed from blockchain.info. BTC price refreshed from CoinGecko."
+  },
+  "trackedItems": [
+    {
+      "category": "miner",
+      "name": "Bitaxe Gamma",
+      "status": "candidate sources seeded",
+      "notes": "Primary audience device. Track stock, price, and firmware notes.",
+      "urls": [
+        "https://www.solosatoshi.com/product/bitaxe-gamma/",
+        "https://bitcoinmerch.com/collections/bitaxe-miners",
+        "https://www.cryptominerbros.com/product/bitaxe-gamma-601-bitcoin-miner/"
+      ]
+    },
+    {
+      "category": "firmware",
+      "name": "ESP-Miner / axeOS releases",
+      "status": "candidate source seeded",
+      "notes": "Monitor release tags and notes for Bitaxe/axeOS update alerts.",
+      "urls": [
+        "https://github.com/bitaxeorg/ESP-Miner/releases"
+      ]
+    },
+    {
+      "category": "accessory",
+      "name": "5V power supplies",
+      "status": "manual research needed",
+      "notes": "Affiliate candidate after account approval."
+    },
+    {
+      "category": "accessory",
+      "name": "USB-C cables and power meters",
+      "status": "manual research needed",
+      "notes": "High relevance for overclock stability."
+    },
+    {
+      "category": "content",
+      "name": "Network difficulty",
+      "status": "calculator default seeded",
+      "notes": "Update defaults before publishing."
+    }
+  ],
+  "updated": "2026-07-05T13:11:06.653Z"
+}
