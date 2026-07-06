@@ -20,7 +20,8 @@ Use the first spend to make Block Odds Lab look legitimate, capture interest, an
 
 ## Setup Checklist After Domain
 
-- Point domain to GitHub Pages.
+- Deploy the `site/` directory to Cloudflare Pages from the `main` branch.
+- Add `blockoddslab.com` and `www.blockoddslab.com` as Cloudflare Pages custom domains.
 - Replace GitHub Pages URLs in sitemap and robots.
 - Create `contact@<domain>` or `hello@<domain>` forwarding.
 - Add the live contact email to footer and disclosure page.
@@ -35,4 +36,3 @@ Use the first spend to make Block Odds Lab look legitimate, capture interest, an
 - Paid tuning log/dashboard.
 - Weekly watchlist signup.
 - Sponsored gear placement only after traffic exists.
-

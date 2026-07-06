@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hermesistoth.github.io/block-odds-lab/sitemap.xml
+Sitemap: https://blockoddslab.com/sitemap.xml
