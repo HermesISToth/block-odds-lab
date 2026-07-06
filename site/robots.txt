@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://blockoddslab.com/sitemap.xml
+Sitemap: https://blockoddslabs.com/sitemap.xml
