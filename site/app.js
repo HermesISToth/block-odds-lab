@@ -11,12 +11,21 @@ const els = {
   btcPrice: document.querySelector("#btc-price"),
   watts: document.querySelector("#watts"),
   kwh: document.querySelector("#kwh"),
+  upgradeHashrate: document.querySelector("#upgrade-hashrate"),
+  upgradeUnit: document.querySelector("#upgrade-unit"),
+  upgradeWatts: document.querySelector("#upgrade-watts"),
+  upgradeCost: document.querySelector("#upgrade-cost"),
+  upgradeYears: document.querySelector("#upgrade-years"),
   expectedTime: document.querySelector("#expected-time"),
   dailyOdds: document.querySelector("#daily-odds"),
   monthlyOdds: document.querySelector("#monthly-odds"),
   yearlyOdds: document.querySelector("#yearly-odds"),
   expectedBtc: document.querySelector("#expected-btc"),
-  powerCost: document.querySelector("#power-cost")
+  powerCost: document.querySelector("#power-cost"),
+  oddsGain: document.querySelector("#odds-gain"),
+  netGain: document.querySelector("#net-gain"),
+  breakEvenBudget: document.querySelector("#break-even-budget"),
+  upgradeVerdict: document.querySelector("#upgrade-verdict")
 };
 
 function numberValue(input, fallback = 0) {
@@ -51,6 +60,48 @@ function formatDuration(seconds) {
   return `${Math.max(1, Math.round(seconds)).toLocaleString()} seconds`;
 }
 
+function yearlyStats(hashrate, difficulty, reward, btcPrice, watts, kwh) {
+  if (hashrate <= 0 || difficulty <= 0) {
+    return {
+      expectedSeconds: Infinity,
+      yearlyChance: 0,
+      expectedBtc: 0,
+      expectedUsd: 0,
+      powerCost: watts / 1000 * 24 * DAYS_PER_YEAR * kwh,
+      netExpectedUsd: 0
+    };
+  }
+
+  const expectedSeconds = difficulty * TWO_TO_32 / hashrate;
+  const yearlyChance = chanceForPeriod(SECONDS_PER_DAY * DAYS_PER_YEAR, expectedSeconds);
+  const expectedBlocksPerYear = SECONDS_PER_DAY * DAYS_PER_YEAR / expectedSeconds;
+  const expectedBtc = expectedBlocksPerYear * reward;
+  const powerCost = watts / 1000 * 24 * DAYS_PER_YEAR * kwh;
+  const expectedUsd = expectedBtc * btcPrice;
+
+  return {
+    expectedSeconds,
+    yearlyChance,
+    expectedBtc,
+    expectedUsd,
+    powerCost,
+    netExpectedUsd: expectedUsd - powerCost
+  };
+}
+
+function formatUsd(value) {
+  const sign = value < 0 ? "-" : "";
+  return `${sign}$${Math.abs(value).toFixed(2)}`;
+}
+
+function verdictFor(netGainPerYear, hardwareCost, years) {
+  const totalNet = netGainPerYear * years - hardwareCost;
+  if (netGainPerYear <= 0) return "Hobby only";
+  if (totalNet >= hardwareCost * 0.25) return "Strong upgrade";
+  if (totalNet >= 0) return "Math-positive";
+  return "Weak payback";
+}
+
 function calculate() {
   if (!els.hashrate || !els.unit || !els.difficulty) return;
   const hashrate = numberValue(els.hashrate) * numberValue(els.unit, 1);
@@ -60,21 +111,32 @@ function calculate() {
   const watts = numberValue(els.watts);
   const kwh = numberValue(els.kwh);
 
-  const expectedSeconds = difficulty * TWO_TO_32 / hashrate;
-  const dailyChance = chanceForPeriod(SECONDS_PER_DAY, expectedSeconds);
-  const monthlyChance = chanceForPeriod(SECONDS_PER_DAY * DAYS_PER_MONTH, expectedSeconds);
-  const yearlyChance = chanceForPeriod(SECONDS_PER_DAY * DAYS_PER_YEAR, expectedSeconds);
-  const expectedBlocksPerYear = SECONDS_PER_DAY * DAYS_PER_YEAR / expectedSeconds;
-  const expectedBtc = expectedBlocksPerYear * reward;
-  const yearlyPowerCost = watts / 1000 * 24 * DAYS_PER_YEAR * kwh;
-  const expectedUsd = expectedBtc * btcPrice;
+  const current = yearlyStats(hashrate, difficulty, reward, btcPrice, watts, kwh);
+  const dailyChance = chanceForPeriod(SECONDS_PER_DAY, current.expectedSeconds);
+  const monthlyChance = chanceForPeriod(SECONDS_PER_DAY * DAYS_PER_MONTH, current.expectedSeconds);
 
-  els.expectedTime.textContent = formatDuration(expectedSeconds);
+  els.expectedTime.textContent = formatDuration(current.expectedSeconds);
   els.dailyOdds.textContent = formatChance(dailyChance);
   els.monthlyOdds.textContent = formatChance(monthlyChance);
-  els.yearlyOdds.textContent = formatChance(yearlyChance);
-  els.expectedBtc.textContent = `${expectedBtc.toFixed(8)} BTC / $${expectedUsd.toFixed(2)}`;
-  els.powerCost.textContent = `$${yearlyPowerCost.toFixed(2)}`;
+  els.yearlyOdds.textContent = formatChance(current.yearlyChance);
+  els.expectedBtc.textContent = `${current.expectedBtc.toFixed(8)} BTC / ${formatUsd(current.expectedUsd)}`;
+  els.powerCost.textContent = formatUsd(current.powerCost);
+
+  if (!els.upgradeHashrate || !els.upgradeUnit) return;
+
+  const upgradeHashrate = numberValue(els.upgradeHashrate) * numberValue(els.upgradeUnit, 1);
+  const upgradeWatts = numberValue(els.upgradeWatts);
+  const hardwareCost = numberValue(els.upgradeCost);
+  const years = Math.max(0.25, numberValue(els.upgradeYears, 1));
+  const upgrade = yearlyStats(upgradeHashrate, difficulty, reward, btcPrice, upgradeWatts, kwh);
+  const oddsDelta = Math.max(0, upgrade.yearlyChance - current.yearlyChance);
+  const netGainPerYear = upgrade.netExpectedUsd - current.netExpectedUsd;
+  const breakEvenBudget = Math.max(0, netGainPerYear * years);
+
+  els.oddsGain.textContent = `+${formatChance(oddsDelta)}`;
+  els.netGain.textContent = `${formatUsd(netGainPerYear)} / year`;
+  els.breakEvenBudget.textContent = `${formatUsd(breakEvenBudget)} over ${years}y`;
+  els.upgradeVerdict.textContent = verdictFor(netGainPerYear, hardwareCost, years);
 }
 
 if (els.hashrate) {
