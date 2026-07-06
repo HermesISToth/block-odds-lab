@@ -449,6 +449,23 @@ footer p:last-child {
   line-height: 1.55;
 }
 
+.paper-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(22px, 4vw, 48px);
+  align-items: center;
+  border-block: 1px solid var(--line);
+}
+
+.paper-band div {
+  max-width: 760px;
+}
+
+.paper-band .button {
+  justify-self: end;
+  white-space: nowrap;
+}
+
 .faq-section {
   display: grid;
   gap: 26px;
@@ -524,6 +541,42 @@ footer p:last-child {
   margin-bottom: 0;
 }
 
+.white-paper .lede {
+  max-width: 820px;
+}
+
+.paper-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  margin: 34px 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--line);
+}
+
+.paper-summary article {
+  min-height: 158px;
+  padding: 20px;
+  background: var(--panel);
+}
+
+.paper-summary span {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 820;
+  text-transform: uppercase;
+}
+
+.paper-summary strong {
+  display: block;
+  color: var(--text);
+  line-height: 1.35;
+}
+
 footer {
   padding: 34px clamp(18px, 4vw, 52px);
   border-top: 1px solid var(--line);
@@ -552,7 +605,8 @@ footer p {
   .intro-band,
   .calculator-layout,
   .alerts-layout,
-  .gear-layout {
+  .gear-layout,
+  .paper-band {
     grid-template-columns: 1fr;
   }
 
@@ -560,8 +614,13 @@ footer p {
   .field-grid,
   .faq-list,
   .results,
-  .upgrade-results {
+  .upgrade-results,
+  .paper-summary {
     grid-template-columns: 1fr;
+  }
+
+  .paper-band .button {
+    justify-self: start;
   }
 
   .guide-grid {
