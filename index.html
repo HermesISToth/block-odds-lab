@@ -103,6 +103,9 @@
           <p class="note">
             This uses the standard approximation: probability per hash is about 1 / (difficulty x 2^32). Real mining is random; averages are not promises.
           </p>
+          <p class="note">
+            Default inputs were refreshed July 6, 2026. Edit price, difficulty, power, and cost fields whenever conditions change.
+          </p>
         </div>
 
         <div class="tool-panel" aria-label="Bitcoin solo mining odds calculator">
@@ -128,7 +131,7 @@
             </label>
             <label>
               BTC price, USD
-              <input id="btc-price" type="number" min="0" step="100" value="62655">
+              <input id="btc-price" type="number" min="0" step="100" value="61934">
             </label>
             <label>
               Power draw, watts
@@ -169,6 +172,57 @@
           <div class="ev-row">
             <p><strong id="expected-btc">-</strong> expected BTC per year before fees and electricity.</p>
             <p><strong id="power-cost">-</strong> estimated yearly electricity cost.</p>
+          </div>
+
+          <div class="planner" aria-label="Upgrade sanity check">
+            <div>
+              <p class="eyebrow">Upgrade sanity check</p>
+              <h3>Does the next miner actually move the needle?</h3>
+              <p>Compare your current setup against a possible upgrade before you buy another board, PSU, fan, or bundle.</p>
+            </div>
+            <div class="field-grid planner-fields">
+              <label>
+                Upgrade hashrate
+                <span class="input-row">
+                  <input id="upgrade-hashrate" type="number" min="0" step="0.01" value="2.4">
+                  <select id="upgrade-unit" aria-label="Upgrade hashrate unit">
+                    <option value="1000000000">GH/s</option>
+                    <option value="1000000000000" selected>TH/s</option>
+                    <option value="1000000000000000">PH/s</option>
+                  </select>
+                </span>
+              </label>
+              <label>
+                Upgrade watts
+                <input id="upgrade-watts" type="number" min="0" step="1" value="38">
+              </label>
+              <label>
+                Hardware cost, USD
+                <input id="upgrade-cost" type="number" min="0" step="1" value="180">
+              </label>
+              <label>
+                Time horizon, years
+                <input id="upgrade-years" type="number" min="0.25" step="0.25" value="3">
+              </label>
+            </div>
+            <div class="upgrade-results">
+              <article>
+                <span>Yearly odds gain</span>
+                <strong id="odds-gain">-</strong>
+              </article>
+              <article>
+                <span>Net EV gain / year</span>
+                <strong id="net-gain">-</strong>
+              </article>
+              <article>
+                <span>Break-even hardware budget</span>
+                <strong id="break-even-budget">-</strong>
+              </article>
+              <article>
+                <span>Verdict</span>
+                <strong id="upgrade-verdict">-</strong>
+              </article>
+            </div>
           </div>
         </div>
       </section>
@@ -271,6 +325,10 @@
           <article>
             <h3>What should I upgrade first?</h3>
             <p>Start with stability: power supply, short quality cable, airflow, and a power meter. Measure before spending more money on hashrate.</p>
+          </article>
+          <article>
+            <h3>When is another miner worth buying?</h3>
+            <p>Use the upgrade sanity check. If the odds barely change and the net expected value is negative, buy only for learning or fun, not profit.</p>
           </article>
           <article>
             <h3>Is this financial advice?</h3>
