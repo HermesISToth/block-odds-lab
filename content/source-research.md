@@ -1,9 +1,14 @@
 # Source Research
 
-Last updated: 2026-07-05
+Last updated: 2026-07-07
 
 ## Primary Project Sources
 
+- Bitcoin white paper: https://bitcoin.org/bitcoin.pdf
+- Bitcoin Developer Guide, mining: https://developer.bitcoin.org/devguide/mining.html
+- Bitcoin Developer Reference, block chain: https://developer.bitcoin.org/reference/block_chain.html
+- Cambridge Digital Mining Industry Report: https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/
+- U.S. EIA cryptocurrency mining electricity demand article: https://www.eia.gov/todayinenergy/detail.php?id=61364
 - Bitaxe official site: https://www.bitaxe.org/
 - Bitaxe official vendor list: https://www.bitaxe.org/buy
 - Bitaxe Gamma hardware repository: https://github.com/bitaxeorg/bitaxegamma
@@ -26,7 +31,7 @@ Unvetted for affiliate terms. Use for stock/price research only until approved.
 
 ## Notes
 
+- Public site now links to Bitcoin.org, Bitcoin Developer documentation, Cambridge Judge Business School, and the U.S. Energy Information Administration as trust anchors.
 - Search results showed Solo Satoshi listing a Gamma range around $61-$72 and stating 1.2 TH/s at 18 W, but prices can change quickly.
 - ESP-Miner release search showed v2.14.1 assets dated 2026-06-22. Confirm directly on GitHub before publishing firmware notes.
 - Any affiliate/recommendation page needs FTC-style clear disclosure before monetized links.
-
