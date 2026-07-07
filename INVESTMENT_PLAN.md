@@ -18,17 +18,11 @@ Use the first spend to make Block Odds Lab look legitimate, capture interest, an
 - Paid analytics.
 - Paid design tools.
 
-## Setup Checklist After Domain
+## Setup Status After Domain
 
-- Deploy the `site/` directory to Cloudflare Pages from the `main` branch.
-- Add `blockoddslab.com` and `www.blockoddslab.com` as Cloudflare Pages custom domains.
-- Replace GitHub Pages URLs in sitemap and robots.
-- Create `contact@<domain>` or `hello@<domain>` forwarding.
-- Add the live contact email to footer and disclosure page.
-- Create a free email-list provider account.
-- Replace disabled signup form with live embed or hosted signup link.
-- Add Search Console verification.
-- Prepare affiliate applications with the branded domain.
+- Done: custom domain, sitemap/robots canonical URLs, public contact email, email routing, Search Console ownership, and sitemap submission.
+- Still open: direct analytics access, indexing follow-up after Google processes the sitemap, free email-list provider, live signup link, and affiliate applications with the branded domain.
+- Hosting note: the site currently deploys through GitHub Pages on `gh-pages`; Cloudflare fronts DNS/CDN.
 
 ## First Monetization Targets
 

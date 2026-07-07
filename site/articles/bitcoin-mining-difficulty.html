@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bitcoin Mining Difficulty Explained for Hobby Miners | Block Odds Lab</title>
+    <meta name="description" content="Understand Bitcoin mining difficulty, why it changes, and how it affects Bitaxe, NerdMiner, and solo lottery mining odds.">
+    <meta name="theme-color" content="#0b0d10">
+    <link rel="canonical" href="https://blockoddslabs.com/articles/bitcoin-mining-difficulty.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Block Odds Lab">
+    <meta property="og:title" content="Bitcoin Mining Difficulty Explained for Hobby Miners | Block Odds Lab">
+    <meta property="og:description" content="Understand Bitcoin mining difficulty, why it changes, and how it affects small solo miners.">
+    <meta property="og:url" content="https://blockoddslabs.com/articles/bitcoin-mining-difficulty.html">
+    <meta property="og:image" content="https://blockoddslabs.com/assets/hero-lottery-mining.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bitcoin Mining Difficulty Explained for Hobby Miners | Block Odds Lab">
+    <meta name="twitter:description" content="Understand Bitcoin mining difficulty, why it changes, and how it affects small solo miners.">
+    <meta name="twitter:image" content="https://blockoddslabs.com/assets/hero-lottery-mining.png">
+    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../index.html"><span class="brand-mark">B</span><span>Block Odds Lab</span></a>
+      <nav><a href="../index.html#calculator">Calculator</a><a href="../index.html#guides">Guides</a><a href="../index.html#gear">Gear</a></nav>
+    </header>
+    <main>
+      <article class="section article-page">
+        <p class="eyebrow">Difficulty</p>
+        <h1>Difficulty is the moving wall every small miner is pushing against</h1>
+        <p>
+          Bitcoin mining difficulty is the network's way of keeping blocks near the target pace as miners add or remove hashrate. For a hobby miner, difficulty is the number that turns a hashrate into realistic odds.
+        </p>
+        <h2>What difficulty means</h2>
+        <p>
+          Miners are searching for a block hash below the current target. Difficulty describes how hard that target is compared with Bitcoin's baseline difficulty. When difficulty rises, each hash has a lower chance of being enough.
+        </p>
+        <p>
+          The common shortcut for lottery-mining math is: chance per hash is about 1 divided by difficulty times 2^32. That is why the calculator asks for both hashrate and difficulty.
+        </p>
+        <div class="callout"><p>Hashrate is how many tickets you buy. Difficulty is how big the raffle is.</p></div>
+        <h2>Why difficulty changes</h2>
+        <p>
+          Bitcoin adjusts difficulty every 2,016 blocks. If blocks were found too quickly during the prior adjustment window, difficulty moves up. If blocks were found too slowly, difficulty moves down. The target is stable block timing, not stable miner profitability.
+        </p>
+        <h2>What it means for Bitaxe and NerdMiner users</h2>
+        <p>
+          Small miners are not competing on predictable income. They are learning, tuning, and buying a tiny chance at a rare event. Higher difficulty makes that chance smaller unless your hashrate rises too.
+        </p>
+        <ul>
+          <li>Use current difficulty when comparing upgrades.</li>
+          <li>Re-run the odds after each difficulty adjustment.</li>
+          <li>Do not treat old screenshots or lucky social posts as current math.</li>
+          <li>Buy stability upgrades first if the goal is learning and uptime.</li>
+        </ul>
+        <h2>How to use this on Block Odds Lab</h2>
+        <p>
+          Start with the <a href="../index.html#calculator">odds calculator</a>, then read the <a href="lottery-mining-odds.html">plain-English odds guide</a> and the <a href="lottery-mining-profitability.html">profitability reality check</a>. Together, they separate hobby value from investment language.
+        </p>
+        <aside class="source-box" aria-labelledby="difficulty-sources">
+          <h2 id="difficulty-sources">Sources worth reading</h2>
+          <ul>
+            <li><a href="https://developer.bitcoin.org/devguide/mining.html" target="_blank" rel="noopener noreferrer">Bitcoin Developer Guide: Mining</a></li>
+            <li><a href="https://developer.bitcoin.org/reference/block_chain.html" target="_blank" rel="noopener noreferrer">Bitcoin Developer Reference: Block Chain</a></li>
+            <li><a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener noreferrer">Bitcoin white paper</a></li>
+          </ul>
+        </aside>
+        <p><a class="button primary" href="../index.html#calculator">Run your difficulty math</a></p>
+      </article>
+    </main>
+    <footer><p>Mining outcomes are random. Nothing here is financial advice.</p></footer>
+    <script src="../app.js"></script>
+  </body>
+</html>
