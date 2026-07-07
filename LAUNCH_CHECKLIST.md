@@ -13,7 +13,7 @@
 - Cloudflare Email Routing for `hello@blockoddslabs.com` is live and verified.
 - Public contact email is published on the homepage, disclosure page, and white paper.
 - Connect Cloudflare access for analytics reporting, or create a limited read-only API token for traffic analytics.
-- Submit `https://blockoddslabs.com/sitemap.xml` in Google Search Console.
+- Google Search Console ownership is verified and `https://blockoddslabs.com/sitemap.xml` is submitted.
 - Create a free newsletter/list account only after the contact email works.
 - Keep `site/CNAME` tracked so full-site deploys preserve the custom domain.
 
@@ -62,6 +62,8 @@ Useful first metrics:
 4. Add the TXT verification record in Cloudflare DNS.
 5. After verification, submit `https://blockoddslabs.com/sitemap.xml`.
 6. Check Indexing -> Pages after Google processes the sitemap.
+
+Status: complete. Ownership was verified with the homepage HTML tag, and Logan submitted `https://blockoddslabs.com/sitemap.xml` on 2026-07-07.
 
 ## Hold Spending
 
