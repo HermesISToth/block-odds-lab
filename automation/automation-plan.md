@@ -3,6 +3,8 @@
 ## Jobs OpenClaw Can Run Later
 
 Daily:
+- Generate `reports/block-odds-growth-YYYY-MM-DD.md` from Cloudflare and Google Search Console.
+- Summarize traffic, indexed URLs, pending indexing issues, query data, and next growth action in the evening report.
 - Check Bitcoin difficulty and estimated next adjustment.
 - Check selected miner vendor pages for stock and price changes.
 - Check firmware/project release pages for Bitaxe/axeOS updates.
@@ -16,7 +18,7 @@ Weekly:
 Monthly:
 - Refresh comparison tables.
 - Audit affiliate disclosures and link health.
-- Review analytics: traffic, calculator usage, signup conversion, clicks.
+- Review analytics: traffic, calculator usage, Search Console queries, indexing status, signup conversion, clicks.
 
 ## Approval Boundaries
 
@@ -39,4 +41,3 @@ User approval required:
 - Vendor storefront pages manually selected by the user.
 - Free static hosting after launch approval.
 - Free analytics or self-hosted log review if hosting supports it.
-
