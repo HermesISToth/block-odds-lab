@@ -465,6 +465,52 @@ footer p:last-child {
   margin-top: 10px;
 }
 
+.decision-band {
+  display: grid;
+  gap: 26px;
+}
+
+.decision-grid,
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--line);
+}
+
+.decision-grid a,
+.related-grid a {
+  min-height: 190px;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  padding: 22px;
+  background: var(--panel);
+}
+
+.decision-grid span {
+  color: var(--accent-2);
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.decision-grid strong,
+.related-grid strong {
+  color: var(--text);
+  font-size: 1.08rem;
+  line-height: 1.2;
+}
+
+.decision-grid p,
+.related-grid span {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 .gear-list {
   display: grid;
   gap: 12px;
@@ -616,6 +662,25 @@ footer p:last-child {
   margin-bottom: 0;
 }
 
+.related-links {
+  margin: 38px 0 24px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.related-links h2 {
+  margin-top: 0;
+}
+
+.related-grid {
+  margin-top: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.related-grid a {
+  min-height: 150px;
+}
+
 .article-page ul,
 .article-page ol {
   color: var(--muted);
@@ -712,6 +777,8 @@ footer p {
   .stats-strip,
   .field-grid,
   .faq-list,
+  .decision-grid,
+  .related-grid,
   .results,
   .upgrade-results,
   .paper-summary,
