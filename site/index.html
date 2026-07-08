@@ -176,6 +176,23 @@
             <p><strong id="power-cost">-</strong> estimated yearly electricity cost.</p>
           </div>
 
+          <div class="share-panel" aria-label="Shareable mining odds summary">
+            <div>
+              <p class="eyebrow">Shareable result</p>
+              <h3>Turn the math into a quick post</h3>
+              <p id="share-summary">Run the calculator to generate a short odds summary.</p>
+            </div>
+            <label>
+              Result link
+              <input id="share-url" type="text" readonly value="https://blockoddslabs.com/">
+            </label>
+            <div class="share-actions">
+              <button type="button" id="copy-share">Copy post</button>
+              <button type="button" id="native-share">Share</button>
+              <span id="share-status" role="status" aria-live="polite"></span>
+            </div>
+          </div>
+
           <div class="planner" aria-label="Upgrade sanity check">
             <div>
               <p class="eyebrow">Upgrade sanity check</p>
