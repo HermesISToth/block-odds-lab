@@ -22,6 +22,11 @@ const els = {
   yearlyOdds: document.querySelector("#yearly-odds"),
   expectedBtc: document.querySelector("#expected-btc"),
   powerCost: document.querySelector("#power-cost"),
+  shareSummary: document.querySelector("#share-summary"),
+  shareUrl: document.querySelector("#share-url"),
+  copyShare: document.querySelector("#copy-share"),
+  nativeShare: document.querySelector("#native-share"),
+  shareStatus: document.querySelector("#share-status"),
   oddsGain: document.querySelector("#odds-gain"),
   netGain: document.querySelector("#net-gain"),
   breakEvenBudget: document.querySelector("#break-even-budget"),
@@ -94,6 +99,44 @@ function formatUsd(value) {
   return `${sign}$${Math.abs(value).toFixed(2)}`;
 }
 
+function unitLabel(multiplier) {
+  if (multiplier === 1000000000) return "GH/s";
+  if (multiplier === 1000000000000000) return "PH/s";
+  return "TH/s";
+}
+
+function buildShareUrl() {
+  const url = new URL(window.location.href);
+  url.hash = "calculator";
+  url.searchParams.set("h", numberValue(els.hashrate).toString());
+  url.searchParams.set("u", els.unit.value);
+  url.searchParams.set("d", numberValue(els.difficulty).toString());
+  url.searchParams.set("r", numberValue(els.reward).toString());
+  url.searchParams.set("p", numberValue(els.btcPrice).toString());
+  url.searchParams.set("w", numberValue(els.watts).toString());
+  url.searchParams.set("k", numberValue(els.kwh).toString());
+  return url;
+}
+
+function hydrateFromUrl() {
+  if (!els.hashrate) return;
+  const params = new URLSearchParams(window.location.search);
+  const mapping = [
+    ["h", els.hashrate],
+    ["u", els.unit],
+    ["d", els.difficulty],
+    ["r", els.reward],
+    ["p", els.btcPrice],
+    ["w", els.watts],
+    ["k", els.kwh]
+  ];
+
+  mapping.forEach(([key, input]) => {
+    const value = params.get(key);
+    if (value !== null && input) input.value = value;
+  });
+}
+
 function verdictFor(netGainPerYear, hardwareCost, years) {
   const totalNet = netGainPerYear * years - hardwareCost;
   if (netGainPerYear <= 0) return "Hobby only";
@@ -122,6 +165,15 @@ function calculate() {
   els.expectedBtc.textContent = `${current.expectedBtc.toFixed(8)} BTC / ${formatUsd(current.expectedUsd)}`;
   els.powerCost.textContent = formatUsd(current.powerCost);
 
+  if (els.shareSummary && els.shareUrl) {
+    const shareUrl = buildShareUrl();
+    const hashrateLabel = `${numberValue(els.hashrate)} ${unitLabel(numberValue(els.unit, 1))}`;
+    const summary = `My ${hashrateLabel} Bitcoin lottery miner odds: ${formatDuration(current.expectedSeconds)} expected time, ${formatChance(dailyChance)} per day, ${formatChance(current.yearlyChance)} per year. Expected value before power: ${current.expectedBtc.toFixed(8)} BTC / ${formatUsd(current.expectedUsd)} per year.`;
+    els.shareSummary.textContent = summary;
+    els.shareUrl.value = shareUrl.toString();
+    window.history.replaceState({}, "", shareUrl);
+  }
+
   if (!els.upgradeHashrate || !els.upgradeUnit) return;
 
   const upgradeHashrate = numberValue(els.upgradeHashrate) * numberValue(els.upgradeUnit, 1);
@@ -140,6 +192,8 @@ function calculate() {
 }
 
 if (els.hashrate) {
+  hydrateFromUrl();
+
   document.querySelectorAll("input, select").forEach((input) => {
     input.addEventListener("input", calculate);
   });
@@ -151,6 +205,38 @@ if (els.hashrate) {
       calculate();
     });
   });
+
+  if (els.copyShare) {
+    els.copyShare.addEventListener("click", async () => {
+      const text = `${els.shareSummary.textContent}\n${els.shareUrl.value}`;
+      try {
+        await navigator.clipboard.writeText(text);
+        els.shareStatus.textContent = "Copied";
+      } catch {
+        els.shareUrl.select();
+        els.shareStatus.textContent = "Select and copy";
+      }
+    });
+  }
+
+  if (els.nativeShare) {
+    if (!navigator.share) {
+      els.nativeShare.hidden = true;
+    } else {
+      els.nativeShare.addEventListener("click", async () => {
+        try {
+          await navigator.share({
+            title: "My Block Odds Lab result",
+            text: els.shareSummary.textContent,
+            url: els.shareUrl.value
+          });
+          els.shareStatus.textContent = "Shared";
+        } catch {
+          els.shareStatus.textContent = "";
+        }
+      });
+    }
+  }
 
   calculate();
 }

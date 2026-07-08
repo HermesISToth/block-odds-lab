@@ -328,6 +328,45 @@ select {
   border-top: 1px solid var(--line);
 }
 
+.share-panel {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+  border: 1px solid rgba(78, 208, 177, 0.32);
+  border-radius: 8px;
+  padding: 18px;
+  background: rgba(78, 208, 177, 0.07);
+}
+
+.share-panel h3,
+.share-panel p {
+  margin-bottom: 8px;
+}
+
+.share-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.share-actions button {
+  min-height: 38px;
+  background: var(--accent-2);
+  color: #071310;
+}
+
+.share-actions button[hidden] {
+  display: none;
+}
+
+#share-status {
+  min-height: 20px;
+  color: var(--accent-2);
+  font-size: 0.88rem;
+  font-weight: 750;
+}
+
 .planner {
   display: grid;
   gap: 18px;
