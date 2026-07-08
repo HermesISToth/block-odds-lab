@@ -5,3 +5,4 @@ node_modules/
 secrets/
 *.log
 reports/*.png
+reports/block-odds-growth-*.md

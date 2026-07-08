@@ -29,6 +29,19 @@ node automation/update-watchlist.mjs
 
 This updates `data/watchlist.json` and writes a dated Markdown report in `reports/`.
 
+## Generate Growth Report
+
+Requires local secrets:
+
+- `.env` with `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ZONE_ID`
+- `secrets/google-search-console-service-account.json`
+
+```bash
+node automation/growth-report.mjs
+```
+
+This writes a dated Cloudflare + Google Search Console report in `reports/`.
+
 ## No-Spend Launch Path
 
 1. Finish the first five article drafts.
