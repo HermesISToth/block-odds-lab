@@ -143,6 +143,14 @@
               Electricity, $/kWh
               <input id="kwh" type="number" min="0" step="0.01" value="0.16">
             </label>
+            <label>
+              Pool or service fee, %
+              <input id="pool-fee" type="number" min="0" max="100" step="0.1" value="2">
+            </label>
+            <label>
+              Hardware cost, USD
+              <input id="hardware-cost" type="number" min="0" step="1" value="180">
+            </label>
           </div>
 
           <div class="preset-row" aria-label="Hashrate presets">
@@ -169,10 +177,22 @@
               <span>Chance per year</span>
               <strong id="yearly-odds">-</strong>
             </article>
+            <article>
+              <span>Annual net EV</span>
+              <strong id="net-expected">-</strong>
+            </article>
+            <article>
+              <span>Profit per watt</span>
+              <strong id="profit-per-watt">-</strong>
+            </article>
+            <article>
+              <span>Hardware payback</span>
+              <strong id="hardware-payback">-</strong>
+            </article>
           </div>
 
           <div class="ev-row">
-            <p><strong id="expected-btc">-</strong> expected BTC per year before fees and electricity.</p>
+            <p><strong id="expected-btc">-</strong> expected BTC per year after the fee input, before electricity.</p>
             <p><strong id="power-cost">-</strong> estimated yearly electricity cost.</p>
           </div>
 
