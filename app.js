@@ -11,6 +11,8 @@ const els = {
   btcPrice: document.querySelector("#btc-price"),
   watts: document.querySelector("#watts"),
   kwh: document.querySelector("#kwh"),
+  poolFee: document.querySelector("#pool-fee"),
+  hardwareCost: document.querySelector("#hardware-cost"),
   upgradeHashrate: document.querySelector("#upgrade-hashrate"),
   upgradeUnit: document.querySelector("#upgrade-unit"),
   upgradeWatts: document.querySelector("#upgrade-watts"),
@@ -20,6 +22,9 @@ const els = {
   dailyOdds: document.querySelector("#daily-odds"),
   monthlyOdds: document.querySelector("#monthly-odds"),
   yearlyOdds: document.querySelector("#yearly-odds"),
+  netExpected: document.querySelector("#net-expected"),
+  profitPerWatt: document.querySelector("#profit-per-watt"),
+  hardwarePayback: document.querySelector("#hardware-payback"),
   expectedBtc: document.querySelector("#expected-btc"),
   powerCost: document.querySelector("#power-cost"),
   shareSummary: document.querySelector("#share-summary"),
@@ -65,24 +70,28 @@ function formatDuration(seconds) {
   return `${Math.max(1, Math.round(seconds)).toLocaleString()} seconds`;
 }
 
-function yearlyStats(hashrate, difficulty, reward, btcPrice, watts, kwh) {
+function yearlyStats(hashrate, difficulty, reward, btcPrice, watts, kwh, poolFee = 0) {
+  const feeMultiplier = Math.max(0, 1 - Math.min(100, Math.max(0, poolFee)) / 100);
+  const powerCost = watts / 1000 * 24 * DAYS_PER_YEAR * kwh;
+
   if (hashrate <= 0 || difficulty <= 0) {
     return {
       expectedSeconds: Infinity,
       yearlyChance: 0,
       expectedBtc: 0,
       expectedUsd: 0,
-      powerCost: watts / 1000 * 24 * DAYS_PER_YEAR * kwh,
-      netExpectedUsd: 0
+      powerCost,
+      netExpectedUsd: -powerCost,
+      profitPerWatt: watts > 0 ? -powerCost / DAYS_PER_YEAR / watts : 0
     };
   }
 
   const expectedSeconds = difficulty * TWO_TO_32 / hashrate;
   const yearlyChance = chanceForPeriod(SECONDS_PER_DAY * DAYS_PER_YEAR, expectedSeconds);
   const expectedBlocksPerYear = SECONDS_PER_DAY * DAYS_PER_YEAR / expectedSeconds;
-  const expectedBtc = expectedBlocksPerYear * reward;
-  const powerCost = watts / 1000 * 24 * DAYS_PER_YEAR * kwh;
+  const expectedBtc = expectedBlocksPerYear * reward * feeMultiplier;
   const expectedUsd = expectedBtc * btcPrice;
+  const netExpectedUsd = expectedUsd - powerCost;
 
   return {
     expectedSeconds,
@@ -90,13 +99,22 @@ function yearlyStats(hashrate, difficulty, reward, btcPrice, watts, kwh) {
     expectedBtc,
     expectedUsd,
     powerCost,
-    netExpectedUsd: expectedUsd - powerCost
+    netExpectedUsd,
+    profitPerWatt: watts > 0 ? netExpectedUsd / DAYS_PER_YEAR / watts : 0
   };
 }
 
 function formatUsd(value) {
   const sign = value < 0 ? "-" : "";
   return `${sign}$${Math.abs(value).toFixed(2)}`;
+}
+
+function formatPayback(years) {
+  if (!Number.isFinite(years) || years <= 0) return "No payback";
+  if (years >= 1000) return "No practical payback";
+  if (years >= 10) return `${Math.round(years)} years`;
+  if (years >= 1) return `${years.toFixed(1)} years`;
+  return `${Math.max(1, Math.round(years * 12))} months`;
 }
 
 function unitLabel(multiplier) {
@@ -115,6 +133,8 @@ function buildShareUrl() {
   url.searchParams.set("p", numberValue(els.btcPrice).toString());
   url.searchParams.set("w", numberValue(els.watts).toString());
   url.searchParams.set("k", numberValue(els.kwh).toString());
+  url.searchParams.set("f", numberValue(els.poolFee).toString());
+  url.searchParams.set("c", numberValue(els.hardwareCost).toString());
   return url;
 }
 
@@ -128,7 +148,9 @@ function hydrateFromUrl() {
     ["r", els.reward],
     ["p", els.btcPrice],
     ["w", els.watts],
-    ["k", els.kwh]
+    ["k", els.kwh],
+    ["f", els.poolFee],
+    ["c", els.hardwareCost]
   ];
 
   mapping.forEach(([key, input]) => {
@@ -153,22 +175,30 @@ function calculate() {
   const btcPrice = numberValue(els.btcPrice);
   const watts = numberValue(els.watts);
   const kwh = numberValue(els.kwh);
+  const poolFee = numberValue(els.poolFee);
+  const hardwareCostCurrent = numberValue(els.hardwareCost);
 
-  const current = yearlyStats(hashrate, difficulty, reward, btcPrice, watts, kwh);
+  const current = yearlyStats(hashrate, difficulty, reward, btcPrice, watts, kwh, poolFee);
   const dailyChance = chanceForPeriod(SECONDS_PER_DAY, current.expectedSeconds);
   const monthlyChance = chanceForPeriod(SECONDS_PER_DAY * DAYS_PER_MONTH, current.expectedSeconds);
+  const paybackYears = current.netExpectedUsd > 0 && hardwareCostCurrent > 0
+    ? hardwareCostCurrent / current.netExpectedUsd
+    : Infinity;
 
   els.expectedTime.textContent = formatDuration(current.expectedSeconds);
   els.dailyOdds.textContent = formatChance(dailyChance);
   els.monthlyOdds.textContent = formatChance(monthlyChance);
   els.yearlyOdds.textContent = formatChance(current.yearlyChance);
+  els.netExpected.textContent = `${formatUsd(current.netExpectedUsd)} / year`;
+  els.profitPerWatt.textContent = `${formatUsd(current.profitPerWatt)} / W / day`;
+  els.hardwarePayback.textContent = formatPayback(paybackYears);
   els.expectedBtc.textContent = `${current.expectedBtc.toFixed(8)} BTC / ${formatUsd(current.expectedUsd)}`;
   els.powerCost.textContent = formatUsd(current.powerCost);
 
   if (els.shareSummary && els.shareUrl) {
     const shareUrl = buildShareUrl();
     const hashrateLabel = `${numberValue(els.hashrate)} ${unitLabel(numberValue(els.unit, 1))}`;
-    const summary = `My ${hashrateLabel} Bitcoin lottery miner odds: ${formatDuration(current.expectedSeconds)} expected time, ${formatChance(dailyChance)} per day, ${formatChance(current.yearlyChance)} per year. Expected value before power: ${current.expectedBtc.toFixed(8)} BTC / ${formatUsd(current.expectedUsd)} per year.`;
+    const summary = `My ${hashrateLabel} Bitcoin lottery miner odds: ${formatDuration(current.expectedSeconds)} expected time, ${formatChance(dailyChance)} per day, ${formatChance(current.yearlyChance)} per year. Expected value after fee: ${current.expectedBtc.toFixed(8)} BTC / ${formatUsd(current.expectedUsd)} per year. Net EV after power: ${formatUsd(current.netExpectedUsd)} per year.`;
     els.shareSummary.textContent = summary;
     els.shareUrl.value = shareUrl.toString();
     window.history.replaceState({}, "", shareUrl);
@@ -180,7 +210,7 @@ function calculate() {
   const upgradeWatts = numberValue(els.upgradeWatts);
   const hardwareCost = numberValue(els.upgradeCost);
   const years = Math.max(0.25, numberValue(els.upgradeYears, 1));
-  const upgrade = yearlyStats(upgradeHashrate, difficulty, reward, btcPrice, upgradeWatts, kwh);
+  const upgrade = yearlyStats(upgradeHashrate, difficulty, reward, btcPrice, upgradeWatts, kwh, poolFee);
   const oddsDelta = Math.max(0, upgrade.yearlyChance - current.yearlyChance);
   const netGainPerYear = upgrade.netExpectedUsd - current.netExpectedUsd;
   const breakEvenBudget = Math.max(0, netGainPerYear * years);
