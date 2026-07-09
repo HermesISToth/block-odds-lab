@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Block Odds Calculator | Bitcoin Solo Mining Odds</title>
+    <meta name="description" content="Block Odds calculator guide for Bitcoin solo mining: calculate expected time to find a block, daily odds, yearly odds, power cost, and hardware payback.">
+    <meta name="theme-color" content="#0b0d10">
+    <link rel="canonical" href="https://blockoddslabs.com/block-odds-calculator.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Block Odds Lab">
+    <meta property="og:title" content="Block Odds Calculator | Bitcoin Solo Mining Odds">
+    <meta property="og:description" content="Calculate Bitcoin block odds, expected time, yearly chance, power cost, and hardware payback for a solo mining setup.">
+    <meta property="og:url" content="https://blockoddslabs.com/block-odds-calculator.html">
+    <meta property="og:image" content="https://blockoddslabs.com/assets/hero-lottery-mining.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Block Odds Calculator | Bitcoin Solo Mining Odds">
+    <meta name="twitter:description" content="Calculate Bitcoin block odds, expected time, yearly chance, power cost, and hardware payback.">
+    <meta name="twitter:image" content="https://blockoddslabs.com/assets/hero-lottery-mining.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Block Odds Calculator",
+        "description": "A focused guide to using the Block Odds calculator for Bitcoin solo mining odds, expected time, and hardware decisions.",
+        "url": "https://blockoddslabs.com/block-odds-calculator.html",
+        "mainEntity": {
+          "@type": "SoftwareApplication",
+          "name": "Block Odds Calculator",
+          "applicationCategory": "FinanceApplication",
+          "operatingSystem": "Any",
+          "url": "https://blockoddslabs.com/#calculator",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="brand-mark">B</span><span>Block Odds Lab</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html#calculator">Calculator</a>
+        <a href="index.html#guides">Guides</a>
+        <a href="white-paper.html">White Paper</a>
+        <a href="index.html#gear">Gear</a>
+      </nav>
+    </header>
+    <main>
+      <article class="section article-page">
+        <p class="eyebrow">Calculator</p>
+        <h1>Block odds calculator for Bitcoin solo mining</h1>
+        <p>
+          The Block Odds calculator estimates the chance that a solo miner finds a Bitcoin block over practical time windows. It is built for small hobby setups like Bitaxe, NerdMiner, USB lottery miners, and mixed home-mining rigs.
+        </p>
+        <p><a class="button primary" href="index.html#calculator">Open the calculator</a></p>
+
+        <h2>What the calculator shows</h2>
+        <p>
+          Enter hashrate, network difficulty, block reward, BTC price, power draw, electricity cost, pool or service fee, and hardware cost. The calculator returns expected time to find a block, daily chance, monthly chance, yearly chance, expected BTC, yearly power cost, annual net expected value, profit per watt, and hardware payback.
+        </p>
+
+        <h2>Why block odds are different from profit calculators</h2>
+        <p>
+          A standard mining profitability calculator is usually built around pooled mining payouts. A block odds calculator is different: it answers the solo-mining question, which is whether your hashrate is likely to find a full Bitcoin block before the time horizon you care about.
+        </p>
+        <div class="callout">
+          <p>Expected time is an average, not a countdown. A miner can get lucky early, or it can run forever without finding a block.</p>
+        </div>
+
+        <h2>The plain formula</h2>
+        <p>
+          The rough probability per hash is one divided by difficulty times 2^32. More hashrate means more attempts per second. Higher network difficulty means each attempt is less likely to satisfy the current Bitcoin target.
+        </p>
+
+        <h2>Use it before buying more gear</h2>
+        <p>
+          Run your current miner first, then compare an upgrade. If the yearly odds barely move and the net expected value stays negative after power, the upgrade may still be fun or educational, but it should not be treated like an investment.
+        </p>
+
+        <aside class="related-links" aria-labelledby="calculator-next">
+          <p class="eyebrow">Next step</p>
+          <h2 id="calculator-next">Build the full solo-mining decision</h2>
+          <div class="related-grid">
+            <a href="index.html#calculator"><strong>Run your block odds</strong><span>Use your hashrate, difficulty, power, and cost inputs.</span></a>
+            <a href="articles/lottery-mining-odds.html"><strong>Odds explained plainly</strong><span>Understand why expected time is not a schedule.</span></a>
+            <a href="articles/lottery-mining-profitability.html"><strong>Profitability reality check</strong><span>Separate hobby value from investment language.</span></a>
+            <a href="articles/bitcoin-mining-difficulty.html"><strong>Difficulty explained</strong><span>Refresh the calculator after each difficulty move.</span></a>
+          </div>
+        </aside>
+      </article>
+    </main>
+    <footer>
+      <p>Block Odds Lab is an independent education project. Mining outcomes are random. Nothing here is financial advice.</p>
+      <p>Contact: <a href="mailto:hello@blockoddslabs.com">hello@blockoddslabs.com</a></p>
+      <p><a href="disclosure.html">Legal &amp; disclosure</a></p>
+    </footer>
+    <script src="app.js"></script>
+    <!-- Cloudflare Web Analytics -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"82ae8143f96342b9bdfcffbf1be5cc28"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+  </body>
+</html>
