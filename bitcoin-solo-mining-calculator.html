@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bitcoin Solo Mining Calculator | Odds, EV, Power Cost</title>
+    <meta name="description" content="Free Bitcoin solo mining calculator guide for block odds, expected time, yearly chance, power cost, expected value, and hardware payback.">
+    <meta name="theme-color" content="#0b0d10">
+    <link rel="canonical" href="https://blockoddslabs.com/bitcoin-solo-mining-calculator.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Block Odds Lab">
+    <meta property="og:title" content="Bitcoin Solo Mining Calculator | Block Odds Lab">
+    <meta property="og:description" content="Calculate Bitcoin solo mining block odds, expected time, yearly chance, power cost, and hardware payback before buying more hashrate.">
+    <meta property="og:url" content="https://blockoddslabs.com/bitcoin-solo-mining-calculator.html">
+    <meta property="og:image" content="https://blockoddslabs.com/assets/hero-lottery-mining.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bitcoin Solo Mining Calculator | Block Odds Lab">
+    <meta name="twitter:description" content="Estimate Bitcoin solo mining odds, expected time, yearly chance, power cost, and hardware payback.">
+    <meta name="twitter:image" content="https://blockoddslabs.com/assets/hero-lottery-mining.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What does a Bitcoin solo mining calculator show?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Bitcoin solo mining calculator estimates expected time to find a block, daily chance, monthly chance, yearly chance, expected BTC, power cost, net expected value, and hardware payback from hashrate and network difficulty."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is expected time a prediction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Expected time is a statistical average across many trials. A solo miner can get lucky early, or it can run far longer than the average without finding a block."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does joining a solo pool improve the odds?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. A solo pool helps submit work and credit a block if your miner finds one. The odds still come from hashrate, network difficulty, and time."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="brand-mark">B</span><span>Block Odds Lab</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html#calculator">Calculator</a>
+        <a href="index.html#guides">Guides</a>
+        <a href="white-paper.html">White Paper</a>
+        <a href="index.html#gear">Gear</a>
+      </nav>
+    </header>
+    <main>
+      <article class="section article-page">
+        <p class="eyebrow">Calculator route</p>
+        <h1>Bitcoin solo mining calculator</h1>
+        <p>
+          A Bitcoin solo mining calculator is for one uncomfortable question: if this miner runs by itself, how likely is it to find a full Bitcoin block? Block Odds Lab turns hashrate, difficulty, power, and hardware cost into a practical decision view.
+        </p>
+        <p><a class="button primary" href="index.html#calculator">Open the free calculator</a></p>
+
+        <h2>Use this before buying more hashrate</h2>
+        <p>
+          More terahashes always sound better, but solo mining odds move slowly at hobby scale. Run your current setup first, then compare the upgrade. If the yearly odds barely move and the net expected value stays negative after power, the purchase may still be fun, but it is not an investment case.
+        </p>
+
+        <h2>Inputs that matter</h2>
+        <p>
+          The important inputs are miner hashrate, network difficulty, block reward, BTC price, power draw, electricity rate, pool or service fee, and hardware cost. The calculator combines those into odds and economics instead of showing a single misleading profit number.
+        </p>
+
+        <h2>What makes solo mining different</h2>
+        <p>
+          Pooled mining calculators estimate a stream of small payouts. Solo mining is different. Most days pay zero. The rare successful outcome is a full block reward, and the chance depends on your share of the global hash attempts.
+        </p>
+
+        <div class="callout">
+          <p>The rough probability per hash is about 1 / (difficulty x 2^32). That is why a small miner can technically win while still facing enormous odds.</p>
+        </div>
+
+        <h2>Fast decision checklist</h2>
+        <ul>
+          <li>Run current hashrate and power draw through the calculator.</li>
+          <li>Change only one variable for the upgrade you are considering.</li>
+          <li>Compare yearly chance, net expected value, and hardware payback.</li>
+          <li>Spend first on stability if rejects, heat, or power sag are holding the setup back.</li>
+        </ul>
+
+        <aside class="related-links" aria-labelledby="solo-next">
+          <p class="eyebrow">Next step</p>
+          <h2 id="solo-next">Turn odds into a cleaner setup decision</h2>
+          <div class="related-grid">
+            <a href="index.html#calculator"><strong>Run the calculator</strong><span>Use live hashrate, difficulty, power, and cost inputs.</span></a>
+            <a href="block-odds-calculator.html"><strong>Calculator guide</strong><span>Understand expected time, daily odds, yearly odds, and net EV.</span></a>
+            <a href="articles/bitcoin-mining-difficulty.html"><strong>Difficulty guide</strong><span>Refresh odds when Bitcoin difficulty changes.</span></a>
+            <a href="articles/lottery-mining-profitability.html"><strong>Profitability check</strong><span>Separate hobby value from investment language.</span></a>
+          </div>
+        </aside>
+      </article>
+    </main>
+    <footer>
+      <p>Block Odds Lab is an independent education project. Mining outcomes are random. Nothing here is financial advice.</p>
+      <p>Contact: <a href="mailto:hello@blockoddslabs.com">hello@blockoddslabs.com</a></p>
+      <p><a href="disclosure.html">Legal &amp; disclosure</a></p>
+    </footer>
+    <script src="app.js"></script>
+    <!-- Cloudflare Web Analytics -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"82ae8143f96342b9bdfcffbf1be5cc28"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+  </body>
+</html>
