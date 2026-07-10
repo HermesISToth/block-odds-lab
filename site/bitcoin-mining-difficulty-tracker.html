@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bitcoin Mining Difficulty Tracker for Solo Miners | Block Odds Lab</title>
+    <meta name="description" content="Track the next Bitcoin mining difficulty adjustment, remaining blocks, estimated retarget date, and what the change means for Bitaxe, NerdMiner, and solo mining odds.">
+    <meta name="theme-color" content="#0b0d10">
+    <link rel="canonical" href="https://blockoddslabs.com/bitcoin-mining-difficulty-tracker.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Block Odds Lab">
+    <meta property="og:title" content="Bitcoin Mining Difficulty Tracker for Solo Miners | Block Odds Lab">
+    <meta property="og:description" content="Live Bitcoin difficulty adjustment context for hobby miners who need to rerun their block odds after each retarget.">
+    <meta property="og:url" content="https://blockoddslabs.com/bitcoin-mining-difficulty-tracker.html">
+    <meta property="og:image" content="https://blockoddslabs.com/assets/hero-lottery-mining.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bitcoin Mining Difficulty Tracker for Solo Miners | Block Odds Lab">
+    <meta name="twitter:description" content="Track the next Bitcoin difficulty adjustment and rerun small-miner odds when the math moves.">
+    <meta name="twitter:image" content="https://blockoddslabs.com/assets/hero-lottery-mining.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="alternate" type="application/rss+xml" title="Block Odds Lab feed" href="https://blockoddslabs.com/feed.xml">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Bitcoin Mining Difficulty Tracker",
+        "url": "https://blockoddslabs.com/bitcoin-mining-difficulty-tracker.html",
+        "description": "Track the next Bitcoin mining difficulty adjustment and rerun solo mining odds when difficulty changes.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Block Odds Lab",
+          "url": "https://blockoddslabs.com/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Block Odds Lab home">
+        <span class="brand-mark">B</span>
+        <span>Block Odds Lab</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html#calculator">Calculator</a>
+        <a href="bitcoin-mining-difficulty-tracker.html">Difficulty tracker</a>
+        <a href="index.html#guides">Guides</a>
+        <a href="share-kit.html">Share kit</a>
+        <a href="https://blockoddslabs.substack.com/" rel="noopener">Notes</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section article-page difficulty-tracker">
+        <p class="eyebrow">Live difficulty tracker</p>
+        <h1>Bitcoin difficulty changed? Your solo-mining odds changed too.</h1>
+        <p class="lede">
+          Bitcoin difficulty adjusts every 2,016 blocks. When it moves, Bitaxe, NerdMiner, USB stick miner, and solo pool odds all need fresh math. This page watches the next retarget and routes you back into the calculator when the odds change.
+        </p>
+
+        <div class="difficulty-live" aria-live="polite">
+          <article>
+            <span>Estimated change</span>
+            <strong id="difficulty-change">Loading</strong>
+          </article>
+          <article>
+            <span>Retarget progress</span>
+            <strong id="difficulty-progress">Loading</strong>
+          </article>
+          <article>
+            <span>Blocks remaining</span>
+            <strong id="difficulty-blocks">Loading</strong>
+          </article>
+          <article>
+            <span>Estimated retarget</span>
+            <strong id="difficulty-date">Loading</strong>
+          </article>
+        </div>
+
+        <div class="callout">
+          <p id="difficulty-verdict">Fetching the latest difficulty-adjustment estimate from mempool.space.</p>
+        </div>
+
+        <p class="difficulty-actions">
+          <a class="button primary" href="index.html#calculator">Rerun the block odds calculator</a>
+          <a class="button secondary" href="articles/bitcoin-mining-difficulty.html">Read the difficulty guide</a>
+          <a class="button secondary" href="share-kit.html">Share the difficulty angle</a>
+        </p>
+
+        <h2>Why this can bring in new readers</h2>
+        <p>
+          Difficulty adjustment searches happen on a schedule. People look up the next retarget, see a percent move, then wonder what it means for their miner. Block Odds Lab should be waiting there with the practical answer: rerun the odds with current difficulty before buying, tuning, or posting old screenshots.
+        </p>
+
+        <h2>How to use the tracker</h2>
+        <ul>
+          <li>If difficulty is estimated to rise, your odds get worse unless your hashrate rises too.</li>
+          <li>If difficulty is estimated to fall, your odds improve slightly, but the lottery-mining reality check still applies.</li>
+          <li>When the retarget is close, rerun the calculator instead of trusting old results.</li>
+          <li>Use the tracker link in comments when someone asks why their old Bitaxe or NerdMiner odds changed.</li>
+        </ul>
+
+        <aside class="related-links" aria-labelledby="difficulty-next">
+          <p class="eyebrow">Next step</p>
+          <h2 id="difficulty-next">Turn the retarget into a decision</h2>
+          <div class="related-grid">
+            <a href="index.html#calculator"><strong>Run fresh odds</strong><span>Use current difficulty, hashrate, watts, and power cost.</span></a>
+            <a href="bitaxe-odds-calculator.html"><strong>Bitaxe odds calculator</strong><span>Recheck tuning and watts after difficulty moves.</span></a>
+            <a href="nerdminer-bitcoin-odds.html"><strong>NerdMiner odds</strong><span>Explain possible versus probable with current network math.</span></a>
+            <a href="articles/lottery-mining-profitability.html"><strong>Profitability check</strong><span>Keep expected value separate from hobby value.</span></a>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p>Block Odds Lab is an independent education project. Mining outcomes are random. Nothing here is financial advice.</p>
+      <p><a href="feed.xml">RSS feed</a> · <a href="llms.txt">AI/search discovery file</a> · <a href="disclosure.html">Legal &amp; disclosure</a></p>
+    </footer>
+
+    <script>
+      const formatter = new Intl.DateTimeFormat(undefined, {
+        month: "short",
+        day: "numeric",
+        hour: "numeric",
+        minute: "2-digit"
+      });
+
+      function setText(id, value) {
+        const element = document.querySelector(`#${id}`);
+        if (element) element.textContent = value;
+      }
+
+      function formatRemaining(ms) {
+        if (!Number.isFinite(ms) || ms <= 0) return "Soon";
+        const hours = Math.round(ms / 3600000);
+        if (hours >= 48) return `${Math.round(hours / 24)} days`;
+        if (hours >= 1) return `${hours} hours`;
+        return `${Math.max(1, Math.round(ms / 60000))} minutes`;
+      }
+
+      fetch("https://mempool.space/api/v1/difficulty-adjustment")
+        .then((response) => response.ok ? response.json() : Promise.reject(new Error("difficulty fetch failed")))
+        .then((data) => {
+          const change = Number(data.difficultyChange);
+          const progress = Number(data.progressPercent);
+          const remainingBlocks = Number(data.remainingBlocks);
+          const retargetDate = Number(data.estimatedRetargetDate);
+          const direction = change > 0 ? "higher" : change < 0 ? "lower" : "flat";
+          const changeText = Number.isFinite(change) ? `${change > 0 ? "+" : ""}${change.toFixed(2)}%` : "Unknown";
+
+          setText("difficulty-change", changeText);
+          setText("difficulty-progress", Number.isFinite(progress) ? `${progress.toFixed(1)}%` : "Unknown");
+          setText("difficulty-blocks", Number.isFinite(remainingBlocks) ? remainingBlocks.toLocaleString() : "Unknown");
+          setText("difficulty-date", Number.isFinite(retargetDate) ? formatter.format(new Date(retargetDate)) : "Unknown");
+
+          const verdict = document.querySelector("#difficulty-verdict");
+          if (verdict) {
+            verdict.textContent = `Current estimate: difficulty is tracking ${direction} by ${changeText}, with about ${formatRemaining(Number(data.remainingTime))} until retarget. Rerun the calculator after the adjustment because every small-miner odds screenshot gets stale when difficulty moves.`;
+          }
+        })
+        .catch(() => {
+          setText("difficulty-change", "Unavailable");
+          setText("difficulty-progress", "Unavailable");
+          setText("difficulty-blocks", "Unavailable");
+          setText("difficulty-date", "Unavailable");
+          const verdict = document.querySelector("#difficulty-verdict");
+          if (verdict) {
+            verdict.textContent = "Live difficulty data is temporarily unavailable. The calculator still works if you enter the current difficulty manually.";
+          }
+        });
+    </script>
+    <script src="app.js"></script>
+    <!-- Cloudflare Web Analytics -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"82ae8143f96342b9bdfcffbf1be5cc28"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+  </body>
+</html>
