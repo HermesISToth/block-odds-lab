@@ -84,23 +84,38 @@
       <h2>Copy-ready posts</h2>
       <div class="copy-stack">
         <article class="copy-card">
-          <strong>Reddit, forum, or Discord</strong>
+          <div class="copy-card-header">
+            <strong>Reddit, forum, or Discord</strong>
+            <button type="button" class="copy-snippet">Copy</button>
+          </div>
           <pre>I built a free Bitcoin lottery-mining odds calculator for Bitaxe, NerdMiner, and small solo miners. It shows expected time, daily/monthly/yearly chance, expected BTC, power cost, and whether an upgrade actually moves the needle. No sign-up: https://blockoddslabs.com/#calculator</pre>
         </article>
         <article class="copy-card">
-          <strong>Bitaxe tuning thread</strong>
+          <div class="copy-card-header">
+            <strong>Bitaxe tuning thread</strong>
+            <button type="button" class="copy-snippet">Copy</button>
+          </div>
           <pre>Before pushing a Bitaxe Gamma frequency setting, run the odds and power math first. More hashrate only helps if the board stays stable and the watts make sense: https://blockoddslabs.com/bitaxe-odds-calculator.html</pre>
         </article>
         <article class="copy-card">
-          <strong>NerdMiner reality check</strong>
+          <div class="copy-card-header">
+            <strong>NerdMiner reality check</strong>
+            <button type="button" class="copy-snippet">Copy</button>
+          </div>
           <pre>A NerdMiner can technically find a Bitcoin block, but the expected time is the point. This explains the odds without dunking on the hobby: https://blockoddslabs.com/nerdminer-bitcoin-odds.html</pre>
         </article>
         <article class="copy-card">
-          <strong>TikTok comment</strong>
+          <div class="copy-card-header">
+            <strong>TikTok comment</strong>
+            <button type="button" class="copy-snippet">Copy</button>
+          </div>
           <pre>Run the odds before buying the next lottery miner: https://blockoddslabs.com/#calculator</pre>
         </article>
         <article class="copy-card">
-          <strong>Substack note</strong>
+          <div class="copy-card-header">
+            <strong>Substack note</strong>
+            <button type="button" class="copy-snippet">Copy</button>
+          </div>
           <pre>If you are comparing Bitaxe, NerdMiner, or USB lottery miners, start with the math. Block Odds Lab turns hashrate, difficulty, watts, and power cost into expected time and yearly chance: https://blockoddslabs.com/#calculator</pre>
         </article>
       </div>
@@ -140,5 +155,23 @@
       <p>Block Odds Lab is an independent education project. Mining outcomes are random. Nothing here is financial advice.</p>
       <p><a href="index.html">Home</a> · <a href="feed.xml">RSS feed</a> · <a href="llms.txt">AI/search discovery file</a> · <a href="disclosure.html">Legal &amp; disclosure</a></p>
     </footer>
+    <script>
+      document.querySelectorAll(".copy-snippet").forEach((button) => {
+        button.addEventListener("click", async () => {
+          const card = button.closest(".copy-card");
+          const text = card?.querySelector("pre")?.textContent.trim();
+          if (!text) return;
+          try {
+            await navigator.clipboard.writeText(text);
+            button.textContent = "Copied";
+            window.setTimeout(() => {
+              button.textContent = "Copy";
+            }, 1800);
+          } catch {
+            button.textContent = "Select text";
+          }
+        });
+      });
+    </script>
   </body>
 </html>

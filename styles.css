@@ -723,8 +723,24 @@ footer p:last-child {
   background: var(--panel);
 }
 
-.copy-card strong {
+.copy-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.copy-card-header strong {
   color: var(--accent);
+}
+
+.copy-snippet {
+  min-height: 34px;
+  padding: 0 12px;
+  background: rgba(78, 208, 177, 0.16);
+  color: var(--accent-2);
+  border-color: rgba(78, 208, 177, 0.38);
+  font-size: 0.88rem;
 }
 
 .copy-card pre {
