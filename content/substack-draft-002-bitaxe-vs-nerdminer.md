@@ -53,6 +53,9 @@ Lottery mining is not a wage. It is a long-shot random event with hardware attac
 
 ## Use A Calculator Before The Purchase
 
+Start at Block Odds Labs:
+https://blockoddslabs.com/
+
 Block Odds Lab has pages for both paths:
 
 Bitaxe odds calculator:
@@ -69,4 +72,3 @@ Run the hashrate first. Then decide whether the device still feels worth it.
 That is the healthiest version of this hobby.
 
 Disclosure: This is educational content, not financial advice. Mining outcomes are random, and solo mining should be treated as a hobby unless you deeply understand the economics.
-

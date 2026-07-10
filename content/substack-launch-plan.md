@@ -21,13 +21,15 @@ Canonical home remains: https://blockoddslabs.com/
 
 - Never imply lottery mining is likely to make money.
 - Use plain-English odds, expected time, yearly chance, power cost, and practical tradeoffs.
-- Every post should link to one relevant BOL page.
+- Every post must link back to Block Odds Labs. Use at least one relevant calculator/article link, and include the canonical site link when the post can naturally support it.
+- Prefer a short link block near the end: canonical home, main calculator, and the most relevant topic page.
 - Keep posts useful even if the reader never buys anything.
 - Use affiliate disclosures once affiliate links exist.
 - Avoid generic Bitcoin news unless it changes mining odds or hobby miner decisions.
 
 ## Link Targets
 
+- Canonical home: https://blockoddslabs.com/
 - Main calculator: https://blockoddslabs.com/block-odds-calculator.html
 - Solo mining calculator: https://blockoddslabs.com/bitcoin-solo-mining-calculator.html
 - Bitaxe odds: https://blockoddslabs.com/bitaxe-odds-calculator.html
@@ -62,9 +64,9 @@ Post 2-4 short Substack Notes per week:
 
 - Create or access Substack account.
 - Create publication using the setup copy above.
+- Confirm every article includes a BOL website link block before publishing.
 - Publish draft 001.
 - Publish 3-5 Notes from `substack-notes.md`.
 - Add Substack link back to BOL only after the publication URL is confirmed.
 - Add the BOL site link inside the Substack About page.
 - Reuse each post as a source for future BOL article refreshes.
-

@@ -72,6 +72,10 @@ Block Odds Lab has a NerdMiner-focused guide here:
 
 https://blockoddslabs.com/nerdminer-bitcoin-odds.html
 
+The Block Odds Labs home is here:
+
+https://blockoddslabs.com/
+
 And the main calculator is here:
 
 https://blockoddslabs.com/block-odds-calculator.html
@@ -81,4 +85,3 @@ The point is not to kill the hobby. It is to keep the hobby honest.
 If you still want to run the miner after seeing the math, good. Now you know what you are actually doing.
 
 Disclosure: This is educational content, not financial advice. Mining outcomes are random, and tiny lottery miners should be treated as hobby devices.
-

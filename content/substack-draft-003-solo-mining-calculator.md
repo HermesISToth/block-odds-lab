@@ -51,6 +51,9 @@ That is probably the right question.
 
 ## Try The BOL Calculator
 
+Start at Block Odds Labs:
+https://blockoddslabs.com/
+
 The Block Odds Lab solo mining calculator path is here:
 
 https://blockoddslabs.com/bitcoin-solo-mining-calculator.html
@@ -64,4 +67,3 @@ Use it before buying another miner, pushing another overclock, or convincing you
 The hobby is better when the math is visible.
 
 Disclosure: This is educational content, not financial advice. Mining outcomes are random, and expected value is not a guarantee of future results.
-
