@@ -68,17 +68,9 @@ then you should compare it against something like a Bitaxe, not because the Bita
 
 Before buying or upgrading any lottery miner, put the hashrate into a calculator.
 
-Block Odds Lab has a NerdMiner-focused guide here:
+Block Odds Lab has a [NerdMiner-focused odds guide](https://blockoddslabs.com/nerdminer-bitcoin-odds.html).
 
-https://blockoddslabs.com/nerdminer-bitcoin-odds.html
-
-The Block Odds Labs home is here:
-
-https://blockoddslabs.com/
-
-And the main calculator is here:
-
-https://blockoddslabs.com/block-odds-calculator.html
+Start at [Block Odds Labs](https://blockoddslabs.com/), or jump straight into the [main block odds calculator](https://blockoddslabs.com/block-odds-calculator.html).
 
 The point is not to kill the hobby. It is to keep the hobby honest.
 

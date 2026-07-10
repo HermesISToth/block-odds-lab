@@ -51,16 +51,9 @@ That is probably the right question.
 
 ## Try The BOL Calculator
 
-Start at Block Odds Labs:
-https://blockoddslabs.com/
+Start at [Block Odds Labs](https://blockoddslabs.com/).
 
-The Block Odds Lab solo mining calculator path is here:
-
-https://blockoddslabs.com/bitcoin-solo-mining-calculator.html
-
-The main calculator is here:
-
-https://blockoddslabs.com/block-odds-calculator.html
+Use the [Bitcoin solo mining calculator](https://blockoddslabs.com/bitcoin-solo-mining-calculator.html), or start from the [main block odds calculator](https://blockoddslabs.com/block-odds-calculator.html).
 
 Use it before buying another miner, pushing another overclock, or convincing yourself that "possible" means "close."
 

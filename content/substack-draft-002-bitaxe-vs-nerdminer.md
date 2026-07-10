@@ -53,19 +53,13 @@ Lottery mining is not a wage. It is a long-shot random event with hardware attac
 
 ## Use A Calculator Before The Purchase
 
-Start at Block Odds Labs:
-https://blockoddslabs.com/
+Start at [Block Odds Labs](https://blockoddslabs.com/).
 
 Block Odds Lab has pages for both paths:
 
-Bitaxe odds calculator:
-https://blockoddslabs.com/bitaxe-odds-calculator.html
-
-NerdMiner Bitcoin odds:
-https://blockoddslabs.com/nerdminer-bitcoin-odds.html
-
-Main block odds calculator:
-https://blockoddslabs.com/block-odds-calculator.html
+- [Bitaxe odds calculator](https://blockoddslabs.com/bitaxe-odds-calculator.html)
+- [NerdMiner Bitcoin odds](https://blockoddslabs.com/nerdminer-bitcoin-odds.html)
+- [Main block odds calculator](https://blockoddslabs.com/block-odds-calculator.html)
 
 Run the hashrate first. Then decide whether the device still feels worth it.
 
