@@ -8,6 +8,13 @@
     <lastBuildDate>Fri, 10 Jul 2026 11:20:00 GMT</lastBuildDate>
     <atom:link href="https://blockoddslabs.com/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Bitcoin Mining Difficulty Tracker</title>
+      <link>https://blockoddslabs.com/bitcoin-mining-difficulty-tracker.html</link>
+      <guid>https://blockoddslabs.com/bitcoin-mining-difficulty-tracker.html</guid>
+      <pubDate>Fri, 10 Jul 2026 12:45:00 GMT</pubDate>
+      <description>Track the next Bitcoin difficulty adjustment, remaining blocks, estimated retarget date, and when to rerun solo mining odds.</description>
+    </item>
+    <item>
       <title>Bitcoin Mining Calculator Share Kit</title>
       <link>https://blockoddslabs.com/share-kit.html</link>
       <guid>https://blockoddslabs.com/share-kit.html</guid>
