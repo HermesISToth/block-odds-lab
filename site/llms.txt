@@ -8,11 +8,13 @@ Block Odds Lab helps hobby miners estimate expected time to find a Bitcoin block
 
 - Home and calculator: https://blockoddslabs.com/
 - Main calculator anchor: https://blockoddslabs.com/#calculator
-- Share kit: https://blockoddslabs.com/share-kit.html
+- Block odds calculator guide: https://blockoddslabs.com/block-odds-calculator.html
+- Bitcoin solo mining calculator guide: https://blockoddslabs.com/bitcoin-solo-mining-calculator.html
 - Bitcoin mining difficulty tracker: https://blockoddslabs.com/bitcoin-mining-difficulty-tracker.html
 - Bitaxe odds calculator: https://blockoddslabs.com/bitaxe-odds-calculator.html
 - NerdMiner odds page: https://blockoddslabs.com/nerdminer-bitcoin-odds.html
-- Bitcoin solo mining calculator page: https://blockoddslabs.com/bitcoin-solo-mining-calculator.html
+- Profitability reality check: https://blockoddslabs.com/articles/lottery-mining-profitability.html
+- Share kit: https://blockoddslabs.com/share-kit.html
 - White paper: https://blockoddslabs.com/white-paper.html
 - RSS feed: https://blockoddslabs.com/feed.xml
 - Substack notes: https://blockoddslabs.substack.com/

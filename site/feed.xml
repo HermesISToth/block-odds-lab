@@ -5,8 +5,22 @@
     <link>https://blockoddslabs.com/</link>
     <description>Bitcoin lottery-mining odds, Bitaxe and NerdMiner calculators, and practical solo mining guides.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jul 2026 11:20:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 11:25:00 GMT</lastBuildDate>
     <atom:link href="https://blockoddslabs.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bitcoin Mining Difficulty Explained</title>
+      <link>https://blockoddslabs.com/articles/bitcoin-mining-difficulty.html</link>
+      <guid>https://blockoddslabs.com/articles/bitcoin-mining-difficulty.html</guid>
+      <pubDate>Sat, 11 Jul 2026 11:25:00 GMT</pubDate>
+      <description>Updated guide explaining why difficulty retargets make old Bitaxe, NerdMiner, and solo-mining odds screenshots stale.</description>
+    </item>
+    <item>
+      <title>Is Bitcoin Lottery Mining Profitable?</title>
+      <link>https://blockoddslabs.com/articles/lottery-mining-profitability.html</link>
+      <guid>https://blockoddslabs.com/articles/lottery-mining-profitability.html</guid>
+      <pubDate>Sat, 11 Jul 2026 11:25:00 GMT</pubDate>
+      <description>Updated profitability reality check with stronger calculator routes for solo mining and Bitaxe buying decisions.</description>
+    </item>
     <item>
       <title>Bitcoin Mining Difficulty Tracker</title>
       <link>https://blockoddslabs.com/bitcoin-mining-difficulty-tracker.html</link>
@@ -41,20 +55,6 @@
       <guid>https://blockoddslabs.com/nerdminer-bitcoin-odds.html</guid>
       <pubDate>Thu, 09 Jul 2026 14:00:00 GMT</pubDate>
       <description>A beginner-friendly reality check for NerdMiner odds, learning value, desk mining, and Bitcoin lottery mining expectations.</description>
-    </item>
-    <item>
-      <title>Is Bitcoin Lottery Mining Profitable?</title>
-      <link>https://blockoddslabs.com/articles/lottery-mining-profitability.html</link>
-      <guid>https://blockoddslabs.com/articles/lottery-mining-profitability.html</guid>
-      <pubDate>Wed, 08 Jul 2026 14:00:00 GMT</pubDate>
-      <description>A plain-English profitability reality check for hobby miners comparing expected value, power cost, and learning value.</description>
-    </item>
-    <item>
-      <title>Bitcoin Mining Difficulty Explained</title>
-      <link>https://blockoddslabs.com/articles/bitcoin-mining-difficulty.html</link>
-      <guid>https://blockoddslabs.com/articles/bitcoin-mining-difficulty.html</guid>
-      <pubDate>Wed, 08 Jul 2026 14:00:00 GMT</pubDate>
-      <description>Why Bitcoin mining difficulty changes, how it affects solo mining odds, and when to rerun the calculator.</description>
     </item>
   </channel>
 </rss>
