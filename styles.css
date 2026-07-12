@@ -555,6 +555,71 @@ footer p:last-child {
   white-space: nowrap;
 }
 
+.capture-band,
+.contact-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(22px, 4vw, 48px);
+  align-items: center;
+  border: 1px solid rgba(78, 208, 177, 0.28);
+  border-radius: 8px;
+  padding: clamp(24px, 5vw, 42px);
+  background: rgba(78, 208, 177, 0.07);
+}
+
+.capture-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.contact-band {
+  border-color: rgba(244, 185, 74, 0.28);
+  background: rgba(244, 185, 74, 0.06);
+}
+
+.kit-grid,
+.gamma-route {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  margin: 34px 0 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--line);
+}
+
+.kit-grid article,
+.gamma-route article {
+  min-height: 210px;
+  padding: 20px;
+  background: var(--panel);
+}
+
+.kit-grid span,
+.gamma-route span {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--accent-2);
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.kit-grid h2 {
+  margin-bottom: 10px;
+  font-size: 1.35rem;
+}
+
+.gamma-route strong {
+  display: block;
+  color: var(--text);
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+
 .source-band {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1.15fr);
@@ -861,6 +926,8 @@ footer p {
   .alerts-layout,
   .gear-layout,
   .paper-band,
+  .capture-band,
+  .contact-band,
   .source-band {
     grid-template-columns: 1fr;
   }
@@ -874,12 +941,18 @@ footer p {
   .upgrade-results,
   .difficulty-live,
   .paper-summary,
+  .kit-grid,
+  .gamma-route,
   .source-list {
     grid-template-columns: 1fr;
   }
 
   .paper-band .button {
     justify-self: start;
+  }
+
+  .capture-actions {
+    justify-content: flex-start;
   }
 
   .guide-grid {

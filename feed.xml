@@ -5,8 +5,22 @@
     <link>https://blockoddslabs.com/</link>
     <description>Bitcoin lottery-mining odds, Bitaxe and NerdMiner calculators, and practical solo mining guides.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 13:56:46 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 22:10:00 GMT</lastBuildDate>
     <atom:link href="https://blockoddslabs.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bitcoin Lottery Mining Starter Kit</title>
+      <link>https://blockoddslabs.com/lottery-mining-starter-kit.html</link>
+      <guid>https://blockoddslabs.com/lottery-mining-starter-kit.html</guid>
+      <pubDate>Sun, 12 Jul 2026 22:10:00 GMT</pubDate>
+      <description>A practical setup path for small Bitcoin lottery miners: odds first, then power, cooling, measurement, pool setup, and sane upgrade decisions.</description>
+    </item>
+    <item>
+      <title>Bitaxe Gamma Odds Calculator</title>
+      <link>https://blockoddslabs.com/bitaxe-gamma-odds.html</link>
+      <guid>https://blockoddslabs.com/bitaxe-gamma-odds.html</guid>
+      <pubDate>Sun, 12 Jul 2026 22:10:00 GMT</pubDate>
+      <description>Bitaxe Gamma hashrate, watts, yearly Bitcoin block odds, power cost, and whether another Gamma meaningfully moves the needle.</description>
+    </item>
     <item>
       <title>Block Odds Calculator FAQ Update</title>
       <link>https://blockoddslabs.com/block-odds-calculator.html</link>

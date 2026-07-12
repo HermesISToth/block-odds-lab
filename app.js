@@ -198,7 +198,7 @@ function calculate() {
   if (els.shareSummary && els.shareUrl) {
     const shareUrl = buildShareUrl();
     const hashrateLabel = `${numberValue(els.hashrate)} ${unitLabel(numberValue(els.unit, 1))}`;
-    const summary = `My ${hashrateLabel} Bitcoin lottery miner odds: ${formatDuration(current.expectedSeconds)} expected time, ${formatChance(dailyChance)} per day, ${formatChance(current.yearlyChance)} per year. Expected value after fee: ${current.expectedBtc.toFixed(8)} BTC / ${formatUsd(current.expectedUsd)} per year. Net EV after power: ${formatUsd(current.netExpectedUsd)} per year.`;
+    const summary = `I ran a ${hashrateLabel} Bitcoin lottery-mining setup through Block Odds Lab. Result: ${formatDuration(current.expectedSeconds)} expected time, ${formatChance(dailyChance)} daily chance, ${formatChance(current.yearlyChance)} yearly chance. EV after fee is ${current.expectedBtc.toFixed(8)} BTC / ${formatUsd(current.expectedUsd)} per year; net after power is ${formatUsd(current.netExpectedUsd)} per year. Run yours before buying the next miner.`;
     els.shareSummary.textContent = summary;
     els.shareUrl.value = shareUrl.toString();
     window.history.replaceState({}, "", shareUrl);
