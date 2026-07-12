@@ -5,8 +5,22 @@
     <link>https://blockoddslabs.com/</link>
     <description>Bitcoin lottery-mining odds, Bitaxe and NerdMiner calculators, and practical solo mining guides.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 11:45:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 13:56:46 GMT</lastBuildDate>
     <atom:link href="https://blockoddslabs.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Block Odds Calculator FAQ Update</title>
+      <link>https://blockoddslabs.com/block-odds-calculator.html</link>
+      <guid>https://blockoddslabs.com/block-odds-calculator.html#faq-2026-07-12</guid>
+      <pubDate>Sun, 12 Jul 2026 13:56:46 GMT</pubDate>
+      <description>Updated block odds calculator guide with clearer FAQ answers for Bitcoin solo mining odds, expected time, and small-miner block probability.</description>
+    </item>
+    <item>
+      <title>Bitaxe Odds Calculator FAQ Update</title>
+      <link>https://blockoddslabs.com/bitaxe-odds-calculator.html</link>
+      <guid>https://blockoddslabs.com/bitaxe-odds-calculator.html#faq-2026-07-12</guid>
+      <pubDate>Sun, 12 Jul 2026 13:56:46 GMT</pubDate>
+      <description>Updated Bitaxe odds calculator guide with clearer answers for Bitaxe block odds, tuning tradeoffs, and whether another board moves the needle.</description>
+    </item>
     <item>
       <title>Bitcoin Lottery Mining Weekend Challenge</title>
       <link>https://blockoddslabs.com/weekend-mining-challenge.html</link>

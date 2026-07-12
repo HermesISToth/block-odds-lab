@@ -23,22 +23,59 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Bitaxe Odds Calculator",
-        "url": "https://blockoddslabs.com/bitaxe-odds-calculator.html",
-        "description": "Bitaxe-focused Bitcoin block odds guide for estimating solo mining chance, expected time, power cost, and upgrade sanity.",
-        "mainEntity": {
-          "@type": "SoftwareApplication",
-          "name": "Block Odds Lab Calculator",
-          "applicationCategory": "FinanceApplication",
-          "operatingSystem": "Any",
-          "url": "https://blockoddslabs.com/#calculator",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "name": "Bitaxe Odds Calculator",
+            "url": "https://blockoddslabs.com/bitaxe-odds-calculator.html",
+            "description": "Bitaxe-focused Bitcoin block odds guide for estimating solo mining chance, expected time, power cost, and upgrade sanity.",
+            "mainEntity": {
+              "@id": "https://blockoddslabs.com/#calculator-app"
+            }
+          },
+          {
+            "@id": "https://blockoddslabs.com/#calculator-app",
+            "@type": "SoftwareApplication",
+            "name": "Block Odds Lab Calculator",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Any",
+            "url": "https://blockoddslabs.com/#calculator",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What are Bitaxe odds of finding a Bitcoin block?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Bitaxe block odds depend on measured hashrate, Bitcoin network difficulty, and runtime. At hobby-scale terahash levels, the chance is real but usually lottery-level."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Should I tune a Bitaxe for maximum hashrate?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Not always. A stable Bitaxe setting with lower heat, fewer rejects, and cleaner power may be better than a higher-frequency setting that barely improves yearly block odds."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is buying another Bitaxe worth it for solo mining?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Run the current setup and the possible upgrade through the calculator. Compare yearly odds gain, power cost, net expected value, and hardware payback before buying."
+                }
+              }
+            ]
           }
-        }
+        ]
       }
     </script>
   </head>
@@ -88,6 +125,20 @@
           <li>Should I tune for more hashrate or lower watts?</li>
           <li>Is a second Bitaxe worth buying for lottery mining?</li>
         </ul>
+
+        <h2>Bitaxe odds FAQ</h2>
+        <h3>What are Bitaxe odds of finding a Bitcoin block?</h3>
+        <p>
+          Bitaxe block odds depend on measured hashrate, Bitcoin network difficulty, and runtime. At hobby-scale terahash levels, the chance is real but usually lottery-level.
+        </p>
+        <h3>Should I tune a Bitaxe for maximum hashrate?</h3>
+        <p>
+          Not always. A stable Bitaxe setting with lower heat, fewer rejects, and cleaner power may be better than a higher-frequency setting that barely improves yearly block odds.
+        </p>
+        <h3>Is buying another Bitaxe worth it for solo mining?</h3>
+        <p>
+          Run the current setup and the possible upgrade through the calculator. Compare yearly odds gain, power cost, net expected value, and hardware payback before buying.
+        </p>
 
         <aside class="related-links" aria-labelledby="bitaxe-next">
           <p class="eyebrow">Next step</p>
