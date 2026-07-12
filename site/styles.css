@@ -39,8 +39,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  padding: 14px clamp(18px, 4vw, 52px);
+  gap: 22px;
+  padding: 12px clamp(18px, 4vw, 52px);
   background: rgba(11, 13, 16, 0.86);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(16px);
@@ -55,6 +55,7 @@ nav {
 
 nav {
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .brand {
@@ -73,7 +74,8 @@ nav {
 
 nav a {
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
+  font-weight: 680;
 }
 
 nav a:hover {
@@ -82,11 +84,14 @@ nav a:hover {
 
 .hero {
   position: relative;
-  min-height: min(760px, 92vh);
+  min-height: min(680px, 86vh);
   display: grid;
-  align-items: end;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.55fr);
+  gap: clamp(26px, 5vw, 70px);
+  align-items: center;
   isolation: isolate;
   overflow: hidden;
+  padding: clamp(76px, 11vw, 132px) clamp(18px, 5vw, 76px) clamp(42px, 6vw, 76px);
 }
 
 .hero-media {
@@ -108,8 +113,8 @@ nav a:hover {
 }
 
 .hero-content {
-  width: min(780px, 92vw);
-  padding: 0 clamp(18px, 5vw, 76px) 10vh;
+  width: min(720px, 92vw);
+  padding: 0;
 }
 
 .eyebrow {
@@ -130,9 +135,9 @@ p {
 
 h1 {
   margin-bottom: 18px;
-  font-size: clamp(2.75rem, 6vw, 5.8rem);
-  line-height: 0.94;
-  max-width: 11ch;
+  font-size: clamp(2.55rem, 5.2vw, 5rem);
+  line-height: 0.98;
+  max-width: 13ch;
   letter-spacing: 0;
 }
 
@@ -165,6 +170,43 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.hero-console {
+  display: grid;
+  gap: 1px;
+  overflow: hidden;
+  align-self: center;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: var(--shadow);
+}
+
+.hero-console .eyebrow {
+  margin: 0;
+  padding: 18px 18px 4px;
+  background: rgba(15, 19, 24, 0.86);
+}
+
+.hero-console a {
+  display: grid;
+  gap: 7px;
+  padding: 18px;
+  background: rgba(15, 19, 24, 0.86);
+}
+
+.hero-console span {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.hero-console strong {
+  color: var(--text);
+  font-size: 1.02rem;
+  line-height: 1.35;
 }
 
 .button,
@@ -913,12 +955,19 @@ footer p {
     flex-direction: column;
   }
 
+  nav {
+    justify-content: flex-start;
+  }
+
   .hero {
-    min-height: 760px;
+    min-height: auto;
+    grid-template-columns: 1fr;
+    align-items: start;
+    padding-top: 52px;
   }
 
   .hero-content {
-    padding-bottom: 74px;
+    width: min(720px, 100%);
   }
 
   .intro-band,
@@ -972,8 +1021,8 @@ footer p {
   }
 
   h1 {
-    font-size: 2.75rem;
-    max-width: 11ch;
+    font-size: 2.55rem;
+    max-width: 12ch;
   }
 
   .hero-media {
