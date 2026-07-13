@@ -5,8 +5,15 @@
     <link>https://blockoddslabs.com/</link>
     <description>Bitcoin lottery-mining odds, Bitaxe and NerdMiner calculators, and practical solo mining guides.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 22:10:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 11:30:00 GMT</lastBuildDate>
     <atom:link href="https://blockoddslabs.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bitcoin Lottery Mining Starter Kit FAQ Update</title>
+      <link>https://blockoddslabs.com/lottery-mining-starter-kit.html</link>
+      <guid>https://blockoddslabs.com/lottery-mining-starter-kit.html#faq-2026-07-13</guid>
+      <pubDate>Mon, 13 Jul 2026 11:30:00 GMT</pubDate>
+      <description>Updated starter-kit guidance for Bitaxe, NerdMiner, power, cooling, meters, solo pool setup, and when a second miner actually makes sense.</description>
+    </item>
     <item>
       <title>Bitcoin Lottery Mining Starter Kit</title>
       <link>https://blockoddslabs.com/lottery-mining-starter-kit.html</link>
