@@ -5,8 +5,15 @@
     <link>https://blockoddslabs.com/</link>
     <description>Bitcoin lottery-mining odds, Bitaxe and NerdMiner calculators, and practical solo mining guides.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Jul 2026 11:30:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 12:08:00 GMT</lastBuildDate>
     <atom:link href="https://blockoddslabs.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Block Odds Lab Notes Hub</title>
+      <link>https://blockoddslabs.com/notes.html</link>
+      <guid>https://blockoddslabs.com/notes.html</guid>
+      <pubDate>Mon, 13 Jul 2026 12:08:00 GMT</pubDate>
+      <description>A crawlable bridge from Block Odds Lab calculators, starter-kit pages, and share routes to ongoing Bitcoin lottery-mining notes on Substack.</description>
+    </item>
     <item>
       <title>Bitcoin Lottery Mining Starter Kit FAQ Update</title>
       <link>https://blockoddslabs.com/lottery-mining-starter-kit.html</link>
