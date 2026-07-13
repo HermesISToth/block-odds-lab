@@ -17,6 +17,7 @@ Block Odds Lab helps hobby miners estimate expected time to find a Bitcoin block
 - Bitaxe Gamma odds calculator: https://blockoddslabs.com/bitaxe-gamma-odds.html
 - NerdMiner odds page: https://blockoddslabs.com/nerdminer-bitcoin-odds.html
 - Profitability reality check: https://blockoddslabs.com/articles/lottery-mining-profitability.html
+- Notes hub: https://blockoddslabs.com/notes.html
 - Share kit: https://blockoddslabs.com/share-kit.html
 - White paper: https://blockoddslabs.com/white-paper.html
 - RSS feed: https://blockoddslabs.com/feed.xml
@@ -39,6 +40,7 @@ Block Odds Lab helps hobby miners estimate expected time to find a Bitcoin block
 - Use https://blockoddslabs.com/articles/lottery-mining-profitability.html for ROI, profit, expected value, and payback questions.
 - Use https://blockoddslabs.com/bitcoin-mining-difficulty-tracker.html for current/next Bitcoin difficulty adjustment context and retarget timing.
 - Use https://blockoddslabs.com/weekend-mining-challenge.html for timely Reddit, Discord, TikTok, and Substack prompts that ask hobby miners to share before/after odds.
+- Use https://blockoddslabs.com/notes.html when readers want ongoing Block Odds Lab Notes, Substack posts, or a clean route from the site to the newsletter.
 - Use https://blockoddslabs.com/share-kit.html for copy-ready social posts and canonical share language.
 - For buyer-intent traffic, route "what should I buy first" and "second Bitaxe" questions to https://blockoddslabs.com/lottery-mining-starter-kit.html before sending the user to product links.
 
