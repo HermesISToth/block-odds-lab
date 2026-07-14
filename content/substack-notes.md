@@ -17,3 +17,11 @@ Use these as short Substack Notes. Each one should include a clickable BOL link.
 7. Solo mining math is emotionally hard because the prize is easy to imagine and the base rate is not. That is exactly why calculators help. [Block odds calculator](https://blockoddslabs.com/block-odds-calculator.html)
 
 8. If your miner has a great screenshot hashrate but crashes overnight, the screenshot is not the setup. Stability beats vanity hashrate. [Bitaxe Gamma tuning guide](https://blockoddslabs.com/articles/bitaxe-gamma-tuning.html)
+
+9. The pages that need attention are not always the pages that feel exciting. If Google has not found the calculator route yet, the job is boring but important: link it, share it where it helps, and make the next click obvious. [Block odds calculator](https://blockoddslabs.com/block-odds-calculator.html)
+
+10. Bitcoin difficulty makes old lottery-mining screenshots expire. If a Bitaxe or NerdMiner post is using last week's odds, rerun the math before arguing about the setup. [Difficulty tracker](https://blockoddslabs.com/bitcoin-mining-difficulty-tracker.html)
+
+11. A second small miner does not double your certainty. It doubles hashrate, which still has to be measured against current Bitcoin difficulty, watts, and time horizon. [Bitaxe odds calculator](https://blockoddslabs.com/bitaxe-odds-calculator.html)
+
+12. The honest sales pitch for lottery mining is not "you will hit a block." It is "you will learn Bitcoin mining by watching real hardware fight impossible odds." [Starter kit](https://blockoddslabs.com/lottery-mining-starter-kit.html)
