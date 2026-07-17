@@ -8,6 +8,8 @@ Primary links:
 - Gamma odds route: https://blockoddslabs.com/bitaxe-gamma-odds.html
 - Bitaxe odds calculator: https://blockoddslabs.com/bitaxe-odds-calculator.html
 - Gamma tuning guide: https://blockoddslabs.com/articles/bitaxe-gamma-tuning.html
+- Posted Substack Note: https://substack.com/profile/527645119-blockoddslabs/note/c-296199958
+- Posted BitcoinTalk reply: https://bitcointalk.org/index.php?topic=5582649.msg66949381#msg66949381
 
 ## Substack Draft
 
