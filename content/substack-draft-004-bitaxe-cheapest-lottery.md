@@ -1,6 +1,8 @@
 # BitAxe Might Be The Cheapest Bitcoin Lottery Ticket That Actually Teaches You Something
 
-Published: https://blockoddslabs.substack.com/p/bitaxe-might-be-the-cheapest-bitcoin
+Published article:
+
+[https://blockoddslabs.substack.com/p/bitaxe-might-be-the-cheapest-bitcoin](https://blockoddslabs.substack.com/p/bitaxe-might-be-the-cheapest-bitcoin)
 
 There is a reason the BitAxe keeps pulling people in.
 
@@ -18,9 +20,9 @@ The current small-miner lineup is easy to understand:
 
 The Gamma is the one I keep coming back to because it sits in a sweet spot. It feels like a real miner, but it is still small enough that the pitch should stay honest: learning, tuning, and lottery-mining fun.
 
-Here is the Gamma video I have been using as the hardware hook:
+Here is the TikTok Shop affiliate video I have been using as the hardware hook:
 
-https://www.tiktok.com/@donkey.digital/video/7660750665504935198
+[TikTok Shop affiliate video: https://www.tiktok.com/@donkey.digital/video/7660750665504935198](https://www.tiktok.com/@donkey.digital/video/7660750665504935198)
 
 The important part comes after the hook.
 
@@ -33,7 +35,7 @@ At roughly terahash scale, the odds are real but tiny. You are competing against
 
 I made a Gamma-specific odds route here:
 
-https://blockoddslabs.com/bitaxe-gamma-odds.html
+[Gamma odds route: https://blockoddslabs.com/bitaxe-gamma-odds.html](https://blockoddslabs.com/bitaxe-gamma-odds.html)
 
 Use it before chasing a hotter setting or buying a second board. The questions that matter are simple:
 
@@ -51,10 +53,8 @@ That is the honest version of the pitch.
 
 Watch the Gamma, run the odds, and buy it for the right reason.
 
-Gamma video:
+Links:
 
-https://www.tiktok.com/@donkey.digital/video/7660750665504935198
-
-Gamma odds route:
-
-https://blockoddslabs.com/bitaxe-gamma-odds.html
+- TikTok Shop affiliate video: [https://www.tiktok.com/@donkey.digital/video/7660750665504935198](https://www.tiktok.com/@donkey.digital/video/7660750665504935198)
+- Gamma odds route: [https://blockoddslabs.com/bitaxe-gamma-odds.html](https://blockoddslabs.com/bitaxe-gamma-odds.html)
+- Published article: [https://blockoddslabs.substack.com/p/bitaxe-might-be-the-cheapest-bitcoin](https://blockoddslabs.substack.com/p/bitaxe-might-be-the-cheapest-bitcoin)

@@ -6,6 +6,22 @@ const envUrl = new URL(".env", root);
 const serviceAccountUrl = new URL("secrets/google-search-console-service-account.json", root);
 const sitemapUrl = "https://blockoddslabs.com/sitemap.xml";
 const siteUrl = "https://blockoddslabs.com/";
+const defaultTimeoutMs = 20000;
+
+async function withTimeout(label, operation, timeoutMs = defaultTimeoutMs) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(new Error(`${label} timed out after ${timeoutMs}ms`)), timeoutMs);
+  try {
+    return await operation(controller.signal);
+  } catch (error) {
+    if (error.name === "AbortError") {
+      throw new Error(`${label} timed out after ${timeoutMs}ms`);
+    }
+    throw error;
+  } finally {
+    clearTimeout(timeout);
+  }
+}
 
 function todayLocal() {
   return new Intl.DateTimeFormat("en-CA", {
@@ -51,7 +67,9 @@ function jsonB64url(value) {
 }
 
 async function fetchJson(url, options = {}) {
-  const response = await fetch(url, options);
+  const label = options.label ?? url;
+  const { label: _label, timeoutMs = defaultTimeoutMs, ...fetchOptions } = options;
+  const response = await withTimeout(label, (signal) => fetch(url, { ...fetchOptions, signal }), timeoutMs);
   const text = await response.text();
   let json;
   try {
@@ -67,6 +85,7 @@ async function fetchJson(url, options = {}) {
 
 async function cloudflareGraphql(env, query, variables) {
   const body = await fetchJson("https://api.cloudflare.com/client/v4/graphql", {
+    label: "Cloudflare GraphQL",
     method: "POST",
     headers: {
       authorization: `Bearer ${env.CLOUDFLARE_API_TOKEN}`,
@@ -96,6 +115,7 @@ async function googleAccessToken(serviceAccount) {
   signer.end();
   const signature = signer.sign(serviceAccount.private_key, "base64url");
   const token = await fetchJson(serviceAccount.token_uri, {
+    label: "Google OAuth service-account token",
     method: "POST",
     headers: { "content-type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams({
@@ -115,12 +135,14 @@ function searchConsoleHeaders(accessToken) {
 
 async function gscGet(accessToken, path) {
   return fetchJson(`https://www.googleapis.com/webmasters/v3/${path}`, {
+    label: `Search Console GET ${path}`,
     headers: searchConsoleHeaders(accessToken)
   });
 }
 
 async function gscPost(accessToken, url, body) {
   return fetchJson(url, {
+    label: url.includes("urlInspection") ? `URL Inspection ${body.inspectionUrl}` : `Search Console POST ${url}`,
     method: "POST",
     headers: searchConsoleHeaders(accessToken),
     body: JSON.stringify(body)
@@ -128,7 +150,7 @@ async function gscPost(accessToken, url, body) {
 }
 
 async function sitemapUrls() {
-  const response = await fetch(sitemapUrl);
+  const response = await withTimeout("sitemap fetch", (signal) => fetch(sitemapUrl, { signal }));
   if (!response.ok) throw new Error(`Sitemap returned ${response.status}`);
   const xml = await response.text();
   return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
@@ -162,6 +184,22 @@ function summarizeIndex(inspections) {
     groups.set(item.coverage, (groups.get(item.coverage) ?? 0) + 1);
   }
   return [...groups.entries()].sort((a, b) => b[1] - a[1]);
+}
+
+async function mapLimit(items, limit, worker) {
+  const results = new Array(items.length);
+  let nextIndex = 0;
+
+  async function run() {
+    while (nextIndex < items.length) {
+      const index = nextIndex;
+      nextIndex += 1;
+      results[index] = await worker(items[index], index);
+    }
+  }
+
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, run));
+  return results;
 }
 
 function recommendationText({ daily, paths, agents, inspections, queries }) {
@@ -259,15 +297,14 @@ async function main() {
     }
   );
 
-  const inspections = [];
-  for (const url of urls) {
+  const inspections = await mapLimit(urls, 4, async (url) => {
     const result = await gscPost(
       accessToken,
       "https://searchconsole.googleapis.com/v1/urlInspection/index:inspect",
       { inspectionUrl: url, siteUrl }
     );
     const status = result.inspectionResult?.indexStatusResult ?? {};
-    inspections.push({
+    return {
       url,
       coverage: status.coverageState ?? "Unknown",
       indexing: status.indexingState ?? "Unknown",
@@ -275,9 +312,8 @@ async function main() {
       fetch: status.pageFetchState ?? "Unknown",
       lastCrawl: status.lastCrawlTime ?? "",
       canonical: status.googleCanonical ?? ""
-    });
-    await new Promise((resolve) => setTimeout(resolve, 350));
-  }
+    };
+  });
 
   const daily = dailyData.httpRequests1dGroups ?? [];
   const paths = detailData.paths ?? [];
