@@ -21,7 +21,7 @@ Gamma odds route:
 https://blockoddslabs.com/bitaxe-gamma-odds.html
 
 If you want to see the Gamma hardware route we have been using:
-https://www.tiktok.com/@donkey.digital/video/7660750665504935198
+https://www.tiktok.com/t/ZP8tRKFjd/
 
 Mining outcomes are random. Expected time is not a countdown. Expected value is not a promise.
 

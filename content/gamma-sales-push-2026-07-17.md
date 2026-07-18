@@ -4,7 +4,7 @@ Core signal: Logan reported the latest Bitaxe Gamma TikTok Shop video had only a
 
 Primary links:
 
-- TikTok Shop Gamma video: https://www.tiktok.com/@donkey.digital/video/7660750665504935198
+- TikTok Shop Gamma video: https://www.tiktok.com/t/ZP8tRKFjd/
 - Gamma odds route: https://blockoddslabs.com/bitaxe-gamma-odds.html
 - Bitaxe odds calculator: https://blockoddslabs.com/bitaxe-odds-calculator.html
 - Gamma tuning guide: https://blockoddslabs.com/articles/bitaxe-gamma-tuning.html
@@ -39,7 +39,7 @@ The page points buyers toward the same questions I would want answered before sp
 
 The TikTok Shop video is here:
 
-https://www.tiktok.com/@donkey.digital/video/7660750665504935198
+https://www.tiktok.com/t/ZP8tRKFjd/
 
 My takeaway: small-miner content does not have to pretend the odds are better than they are. The people who convert are often the same people who appreciate a clear, honest explanation of the lottery math.
 
@@ -54,7 +54,7 @@ The honest funnel is hardware first, odds second:
 - compare one board vs. two
 - buy for learning/content/hobby value, not fake predictable income
 
-Gamma video: https://www.tiktok.com/@donkey.digital/video/7660750665504935198
+Gamma video: https://www.tiktok.com/t/ZP8tRKFjd/
 
 Gamma odds route: https://blockoddslabs.com/bitaxe-gamma-odds.html
 
@@ -81,7 +81,7 @@ The goal is to make the buyer run the actual numbers before treating another boa
 
 The TikTok Shop video that started the current test is here:
 
-https://www.tiktok.com/@donkey.digital/video/7660750665504935198
+https://www.tiktok.com/t/ZP8tRKFjd/
 
 I am intentionally avoiding ROI hype. I think the clean pitch for a Gamma is learning, tuning, and lottery-mining fun with the math visible up front. Curious if other Bitaxe owners have found the same: buyers respond better when you show the odds honestly instead of pretending a small miner is a predictable earner.
 

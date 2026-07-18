@@ -1,11 +1,13 @@
 # BOL Substack Day 1 Ready-to-Post Packet - 2026-07-18
 
-Status: ready for manual or signed-in Substack posting. Do not mark this as posted until the public Note/replies/restack are visible in Substack.
+Status: Day 1 Note posted publicly on 2026-07-18 at 09:31 ET and verified in the Substack feed. Public note: https://substack.com/profile/527645119-blockoddslabs/note/c-296985353
+
+Reply/restack drafts remain queued for relevant Bitcoin, mining, hardware, finance, or creator-tech threads. Do not force them into unrelated feed items just to complete the count.
 
 Primary route:
 
 - Gamma odds: https://blockoddslabs.com/bitaxe-gamma-odds.html
-- Gamma TikTok Shop video: https://www.tiktok.com/@donkey.digital/video/7660750665504935198
+- Gamma TikTok Shop video: https://www.tiktok.com/t/ZP8tRKFjd/
 - Notes hub: https://blockoddslabs.com/notes.html#gamma-community-signal
 
 ## Day 1 Note
@@ -20,7 +22,7 @@ The hardware can be fun and educational. The math should still be visible.
 
 Gamma odds: https://blockoddslabs.com/bitaxe-gamma-odds.html
 
-Gamma video: https://www.tiktok.com/@donkey.digital/video/7660750665504935198
+Gamma video: https://www.tiktok.com/t/ZP8tRKFjd/
 
 ## Reply 1 - Bitaxe / Small ASIC Thread
 

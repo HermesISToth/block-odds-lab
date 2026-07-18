@@ -4,7 +4,7 @@ Core signal: the July 18 growth snapshot still shows the Gamma and Bitaxe calcul
 
 Primary links:
 
-- TikTok Shop Gamma video: https://www.tiktok.com/@donkey.digital/video/7660750665504935198
+- TikTok Shop Gamma video: https://www.tiktok.com/t/ZP8tRKFjd/
 - Gamma odds route: https://blockoddslabs.com/bitaxe-gamma-odds.html
 - Bitaxe odds calculator: https://blockoddslabs.com/bitaxe-odds-calculator.html
 - Gamma tuning guide: https://blockoddslabs.com/articles/bitaxe-gamma-tuning.html
@@ -29,7 +29,7 @@ Before buying a second Bitaxe Gamma, I would run three numbers:
 
 The Gamma is a great learning/tuning machine, but the honest buyer path is hardware curiosity first, visible math second.
 
-Gamma video: https://www.tiktok.com/@donkey.digital/video/7660750665504935198
+Gamma video: https://www.tiktok.com/t/ZP8tRKFjd/
 
 Gamma odds route: https://blockoddslabs.com/bitaxe-gamma-odds.html
 
@@ -51,7 +51,7 @@ https://blockoddslabs.com/bitaxe-gamma-odds.html
 
 The TikTok Shop video driving this test is here:
 
-https://www.tiktok.com/@donkey.digital/video/7660750665504935198
+https://www.tiktok.com/t/ZP8tRKFjd/
 
 The clean pitch is learning, tuning, and lottery-mining fun with the odds visible up front.
 
