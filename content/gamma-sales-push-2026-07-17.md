@@ -1,10 +1,10 @@
 # Bitaxe Gamma Sales Push - 2026-07-17
 
-Core signal: Logan reported the latest Bitaxe Gamma TikTok Shop video had only about 450 views but still produced several sales. Treat that as buyer-intent evidence, not scale evidence. The immediate job is to keep putting useful Gamma math in front of people already interested in small Bitcoin miners.
+Core signal: Logan reported the latest Bitaxe Gamma product video had only about 450 views but still produced several sales. Treat that as buyer-intent evidence, not scale evidence. The immediate job is to keep putting useful Gamma math in front of people already interested in small Bitcoin miners.
 
 Primary links:
 
-- TikTok Shop Gamma video: https://www.tiktok.com/t/ZP8tRnoHy/
+- TikTok Shop Gamma video: https://www.tiktok.com/@donkey.digital/video/7661637482294824223
 - Gamma odds route: https://blockoddslabs.com/bitaxe-gamma-odds.html
 - Bitaxe odds calculator: https://blockoddslabs.com/bitaxe-odds-calculator.html
 - Gamma tuning guide: https://blockoddslabs.com/articles/bitaxe-gamma-tuning.html
@@ -39,13 +39,13 @@ The page points buyers toward the same questions I would want answered before sp
 
 The TikTok Shop video is here:
 
-https://www.tiktok.com/t/ZP8tRnoHy/
+https://www.tiktok.com/@donkey.digital/video/7661637482294824223
 
 My takeaway: small-miner content does not have to pretend the odds are better than they are. The people who convert are often the same people who appreciate a clear, honest explanation of the lottery math.
 
 ## Substack Note
 
-The newest Bitaxe Gamma TikTok Shop push is a useful signal: low views can still sell when the audience is already miner-curious.
+The newest Bitaxe Gamma video Shop push is a useful signal: low views can still sell when the audience is already miner-curious.
 
 The honest funnel is hardware first, odds second:
 
@@ -54,7 +54,7 @@ The honest funnel is hardware first, odds second:
 - compare one board vs. two
 - buy for learning/content/hobby value, not fake predictable income
 
-Gamma video: https://www.tiktok.com/t/ZP8tRnoHy/
+Gamma video: https://www.tiktok.com/@donkey.digital/video/7661637482294824223
 
 Gamma odds route: https://blockoddslabs.com/bitaxe-gamma-odds.html
 
@@ -81,13 +81,13 @@ The goal is to make the buyer run the actual numbers before treating another boa
 
 The TikTok Shop video that started the current test is here:
 
-https://www.tiktok.com/t/ZP8tRnoHy/
+https://www.tiktok.com/@donkey.digital/video/7661637482294824223
 
 I am intentionally avoiding ROI hype. I think the clean pitch for a Gamma is learning, tuning, and lottery-mining fun with the math visible up front. Curious if other Bitaxe owners have found the same: buyers respond better when you show the odds honestly instead of pretending a small miner is a predictable earner.
 
 ## Daily Actions
 
-- Keep the Gamma TikTok video linked anywhere Bitaxe buyer intent appears.
+- Keep the Direct Gamma video video linked anywhere Bitaxe buyer intent appears.
 - Push the Gamma odds route in Substack Notes, BitcoinTalk, calculator share snippets, and tuning conversations.
 - Check indexing daily until `bitaxe-gamma-odds.html` and `bitaxe-odds-calculator.html` are known/indexed.
 - Avoid spam. Use threads where Gamma, Bitaxe, lottery mining, solo odds, or tuning are already the subject.

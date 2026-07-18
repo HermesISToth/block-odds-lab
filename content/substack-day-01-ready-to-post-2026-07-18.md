@@ -7,7 +7,7 @@ Reply/restack drafts remain queued for relevant Bitcoin, mining, hardware, finan
 Primary route:
 
 - Gamma odds: https://blockoddslabs.com/bitaxe-gamma-odds.html
-- Gamma TikTok Shop video: https://www.tiktok.com/t/ZP8tRnoHy/
+- Direct Gamma product video: https://www.tiktok.com/@donkey.digital/video/7661637482294824223
 - Notes hub: https://blockoddslabs.com/notes.html#gamma-community-signal
 
 ## Day 1 Note
@@ -22,7 +22,7 @@ The hardware can be fun and educational. The math should still be visible.
 
 Gamma odds: https://blockoddslabs.com/bitaxe-gamma-odds.html
 
-Gamma video: https://www.tiktok.com/t/ZP8tRnoHy/
+Gamma video: https://www.tiktok.com/@donkey.digital/video/7661637482294824223
 
 ## Reply 1 - Bitaxe / Small ASIC Thread
 

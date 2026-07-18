@@ -1,10 +1,10 @@
 # Bitaxe Gamma Sales Push - 2026-07-18
 
-Core signal: the July 18 growth snapshot still shows the Gamma and Bitaxe calculator routes as unknown to Google, while the Gamma TikTok Shop video has already shown buyer-intent sales at low view count. Today's safest push is to keep routing qualified miner-curious readers from owned/distribution surfaces toward the exact video and the Gamma math pages.
+Core signal: the July 18 growth snapshot still shows the Gamma and Bitaxe calculator routes as unknown to Google, while the Direct Gamma product video has already shown buyer-intent sales at low view count. Today's safest push is to keep routing qualified miner-curious readers from owned/distribution surfaces toward the exact video and the Gamma math pages.
 
 Primary links:
 
-- TikTok Shop Gamma video: https://www.tiktok.com/t/ZP8tRnoHy/
+- TikTok Shop Gamma video: https://www.tiktok.com/@donkey.digital/video/7661637482294824223
 - Gamma odds route: https://blockoddslabs.com/bitaxe-gamma-odds.html
 - Bitaxe odds calculator: https://blockoddslabs.com/bitaxe-odds-calculator.html
 - Gamma tuning guide: https://blockoddslabs.com/articles/bitaxe-gamma-tuning.html
@@ -29,7 +29,7 @@ Before buying a second Bitaxe Gamma, I would run three numbers:
 
 The Gamma is a great learning/tuning machine, but the honest buyer path is hardware curiosity first, visible math second.
 
-Gamma video: https://www.tiktok.com/t/ZP8tRnoHy/
+Gamma video: https://www.tiktok.com/@donkey.digital/video/7661637482294824223
 
 Gamma odds route: https://blockoddslabs.com/bitaxe-gamma-odds.html
 
@@ -51,7 +51,7 @@ https://blockoddslabs.com/bitaxe-gamma-odds.html
 
 The TikTok Shop video driving this test is here:
 
-https://www.tiktok.com/t/ZP8tRnoHy/
+https://www.tiktok.com/@donkey.digital/video/7661637482294824223
 
 The clean pitch is learning, tuning, and lottery-mining fun with the odds visible up front.
 

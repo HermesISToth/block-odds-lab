@@ -7,7 +7,7 @@ Primary target: drive qualified readers from Substack Notes and replies to:
 - Gamma odds: https://blockoddslabs.com/bitaxe-gamma-odds.html
 - Bitaxe odds calculator: https://blockoddslabs.com/bitaxe-odds-calculator.html
 - Main calculator: https://blockoddslabs.com/block-odds-calculator.html
-- Gamma TikTok Shop video: https://www.tiktok.com/t/ZP8tRnoHy/
+- Direct Gamma product video: https://www.tiktok.com/@donkey.digital/video/7661637482294824223
 
 ## Daily Loop
 
@@ -120,7 +120,7 @@ Starter kit: https://blockoddslabs.com/lottery-mining-starter-kit.html
 If a Bitaxe Gamma video makes you want the hardware, pause for one calculator run first. Curiosity is good. Buying blind is not.
 
 Gamma odds: https://blockoddslabs.com/bitaxe-gamma-odds.html
-Gamma TikTok: https://www.tiktok.com/t/ZP8tRnoHy/
+Direct Gamma video: https://www.tiktok.com/@donkey.digital/video/7661637482294824223
 
 ## Guardrails
 
