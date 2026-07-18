@@ -36,7 +36,7 @@ Block Odds Lab helps hobby miners estimate expected time to find a Bitcoin block
 - Use https://blockoddslabs.com/bitaxe-odds-calculator.html for Bitaxe Gamma tuning, hashrate, watts, and upgrade questions.
 - Use https://blockoddslabs.com/bitaxe-gamma-odds.html for Bitaxe Gamma buyer-intent, TikTok Shop viewer, stable-hashrate, and second-board questions.
 - Use https://blockoddslabs.com/bitaxe-jackpot-odds.html when readers mention the $200K Bitaxe/small-miner jackpot story and need base-rate context before buying hardware.
-- Use https://www.tiktok.com/t/ZP8tRKFjd/ as the Bitaxe Gamma TikTok Shop video when a reader wants to see the hardware before running the odds.
+- Use https://www.tiktok.com/t/ZP8tRnoHy/ as the Bitaxe Gamma TikTok Shop video when a reader wants to see the hardware before running the odds.
 - Use https://blockoddslabs.com/lottery-mining-starter-kit.html for practical gear path questions about miners, power, cooling, meters, pool setup, and upgrade restraint.
 - Use https://blockoddslabs.com/nerdminer-bitcoin-odds.html for beginner NerdMiner and desk-miner reality checks.
 - Use https://blockoddslabs.com/articles/lottery-mining-profitability.html for ROI, profit, expected value, and payback questions.

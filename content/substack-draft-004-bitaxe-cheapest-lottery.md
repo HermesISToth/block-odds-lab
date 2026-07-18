@@ -22,7 +22,7 @@ The Gamma is the one I keep coming back to because it sits in a sweet spot. It f
 
 Here is the TikTok Shop affiliate video I have been using as the hardware hook:
 
-[TikTok Shop affiliate video: https://www.tiktok.com/t/ZP8tRKFjd/](https://www.tiktok.com/t/ZP8tRKFjd/)
+[TikTok Shop affiliate video: https://www.tiktok.com/t/ZP8tRnoHy/](https://www.tiktok.com/t/ZP8tRnoHy/)
 
 The important part comes after the hook.
 
@@ -55,6 +55,6 @@ Watch the Gamma, run the odds, and buy it for the right reason.
 
 Links:
 
-- TikTok Shop affiliate video: [https://www.tiktok.com/t/ZP8tRKFjd/](https://www.tiktok.com/t/ZP8tRKFjd/)
+- TikTok Shop affiliate video: [https://www.tiktok.com/t/ZP8tRnoHy/](https://www.tiktok.com/t/ZP8tRnoHy/)
 - Gamma odds route: [https://blockoddslabs.com/bitaxe-gamma-odds.html](https://blockoddslabs.com/bitaxe-gamma-odds.html)
 - Published article: [https://blockoddslabs.substack.com/p/bitaxe-might-be-the-cheapest-bitcoin](https://blockoddslabs.substack.com/p/bitaxe-might-be-the-cheapest-bitcoin)
