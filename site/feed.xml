@@ -5,8 +5,15 @@
     <link>https://blockoddslabs.com/</link>
     <description>Bitcoin lottery-mining odds, Bitaxe and NerdMiner calculators, and practical solo mining guides.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Jul 2026 13:25:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 13:45:00 GMT</lastBuildDate>
     <atom:link href="https://blockoddslabs.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NerdMiner Possible vs Probable Route</title>
+      <link>https://blockoddslabs.com/nerdminer-bitcoin-odds.html</link>
+      <guid>https://blockoddslabs.com/nerdminer-bitcoin-odds.html#substack-day-2-2026-07-19</guid>
+      <pubDate>Sun, 19 Jul 2026 13:45:00 GMT</pubDate>
+      <description>Added a Day 2 Substack-ready traffic angle that uses NerdMiner odds to explain why technically possible block finds still need base-rate context.</description>
+    </item>
     <item>
       <title>Sunday Bitaxe Gamma Buyer Path</title>
       <link>https://blockoddslabs.com/share-kit.html</link>
