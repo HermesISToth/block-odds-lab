@@ -23,8 +23,17 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "name": "Bitcoin Solo Mining Calculator",
+            "url": "https://blockoddslabs.com/bitcoin-solo-mining-calculator.html",
+            "description": "Free Bitcoin solo mining calculator guide for block odds, expected time, yearly chance, power cost, expected value, and hardware payback.",
+            "dateModified": "2026-07-23"
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
           {
             "@type": "Question",
             "name": "What does a Bitcoin solo mining calculator show?",
@@ -48,6 +57,8 @@
               "@type": "Answer",
               "text": "No. A solo pool helps submit work and credit a block if your miner finds one. The odds still come from hashrate, network difficulty, and time."
             }
+          }
+            ]
           }
         ]
       }
@@ -85,6 +96,11 @@
         <h2>What makes solo mining different</h2>
         <p>
           Pooled mining calculators estimate a stream of small payouts. Solo mining is different. Most days pay zero. The rare successful outcome is a full block reward, and the chance depends on your share of the global hash attempts.
+        </p>
+
+        <h2>Current July 23 decision context</h2>
+        <p>
+          With BTC near $64,698 and difficulty around 127.17T, the calculator is most useful as a comparison tool. Run today's solo-mining odds, then change one variable: hashrate, watts, electricity price, hardware cost, or time horizon. That keeps the decision grounded in what changed instead of the feeling that more hardware must help.
         </p>
 
         <div class="callout">
