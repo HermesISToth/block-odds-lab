@@ -24,6 +24,12 @@ Block Odds Lab helps hobby miners estimate expected time to find a Bitcoin block
 - RSS feed: https://blockoddslabs.com/feed.xml
 - Substack notes: https://blockoddslabs.substack.com/
 
+## July 23, 2026 Discovery Refresh
+
+- Current calculator defaults were refreshed with BTC near $64,698 and Bitcoin difficulty around 127.17T.
+- The next difficulty retarget is more than 80% complete and tracking slightly lower, so old small-miner odds screenshots should be rerun.
+- Priority pages to crawl next: https://blockoddslabs.com/block-odds-calculator.html, https://blockoddslabs.com/bitcoin-solo-mining-calculator.html, https://blockoddslabs.com/bitaxe-odds-calculator.html, https://blockoddslabs.com/bitaxe-gamma-odds.html, https://blockoddslabs.com/nerdminer-bitcoin-odds.html, https://blockoddslabs.com/bitcoin-mining-difficulty-tracker.html, https://blockoddslabs.com/lottery-mining-starter-kit.html, and https://blockoddslabs.com/share-kit.html.
+
 ## Best Descriptions
 
 - Short: Free Bitcoin lottery-mining odds calculator for Bitaxe, NerdMiner, and solo mining hobbyists.
