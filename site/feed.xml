@@ -5,8 +5,15 @@
     <link>https://blockoddslabs.com/</link>
     <description>Bitcoin lottery-mining odds, Bitaxe and NerdMiner calculators, and practical solo mining guides.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jul 2026 13:25:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 13:25:00 GMT</lastBuildDate>
     <atom:link href="https://blockoddslabs.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>July 28 Gamma Buyer Route</title>
+      <link>https://blockoddslabs.com/#july-28-gamma-route</link>
+      <guid>https://blockoddslabs.com/#july-28-gamma-route</guid>
+      <pubDate>Tue, 28 Jul 2026 13:25:00 GMT</pubDate>
+      <description>Added a homepage and share-kit route for moving homepage-heavy traffic into Bitaxe Gamma odds, the Bitaxe calculator, setup basics, and the direct TikTok product video.</description>
+    </item>
     <item>
       <title>July 27 Indexed Gamma Buyer Route</title>
       <link>https://blockoddslabs.com/#july-27-gamma-route</link>
