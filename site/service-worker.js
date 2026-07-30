@@ -1,4 +1,4 @@
-const CACHE_NAME = "block-odds-lab-v47";
+const CACHE_NAME = "block-odds-lab-v48";
 const ASSETS = [
   "./",
   "./index.html",
@@ -28,6 +28,7 @@ const ASSETS = [
   "./articles/bitaxe-vs-nerdminer.html",
   "./articles/lottery-mining-profitability.html",
   "./articles/bitcoin-mining-difficulty.html",
+  "./articles/ellipal-cold-wallet-videos.html",
   "./downloads/bitaxe-tuning-log.csv",
   "./assets/hero-lottery-mining.png",
   "./assets/icons/icon-192.png",
