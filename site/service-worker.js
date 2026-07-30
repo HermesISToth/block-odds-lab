@@ -1,4 +1,4 @@
-const CACHE_NAME = "block-odds-lab-v50";
+const CACHE_NAME = "block-odds-lab-v51";
 const ASSETS = [
   "./",
   "./index.html",
@@ -10,6 +10,7 @@ const ASSETS = [
   "./notes.html",
   "./share-kit.html",
   "./traffic-sprint.html",
+  "./cold-wallets.html",
   "./bitcoin-lottery-mining-faq.html",
   "./weekend-mining-challenge.html",
   "./lottery-mining-starter-kit.html",

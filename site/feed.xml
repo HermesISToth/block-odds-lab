@@ -5,8 +5,15 @@
     <link>https://blockoddslabs.com/</link>
     <description>Bitcoin lottery-mining odds, Bitaxe and NerdMiner calculators, and practical solo mining guides.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jul 2026 11:25:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 12:55:00 GMT</lastBuildDate>
     <atom:link href="https://blockoddslabs.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>July 30 Cold Wallet Kitchen-Sink Traffic Push</title>
+      <link>https://blockoddslabs.com/cold-wallets.html</link>
+      <guid>https://blockoddslabs.com/share-kit.html#exchange-custody-kitchen-sink-2026-07-30</guid>
+      <pubDate>Thu, 30 Jul 2026 12:55:00 GMT</pubDate>
+      <description>Added a short cold-wallet route, audience-specific share copy, and internal mining-page links that send exchange-risk readers into the full custody guide and product-attached ELLIPAL videos.</description>
+    </item>
     <item>
       <title>July 30 Exchange Custody Webpage Route</title>
       <link>https://blockoddslabs.com/articles/ellipal-cold-wallet-videos.html</link>
