@@ -1,4 +1,4 @@
-const CACHE_NAME = "block-odds-lab-v53";
+const CACHE_NAME = "block-odds-lab-v54";
 const ASSETS = [
   "./",
   "./index.html",
