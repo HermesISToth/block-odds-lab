@@ -5,8 +5,22 @@
     <link>https://blockoddslabs.com/</link>
     <description>Bitcoin lottery-mining odds, Bitaxe and NerdMiner calculators, and practical solo mining guides.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Aug 2026 13:25:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 14:55:00 GMT</lastBuildDate>
     <atom:link href="https://blockoddslabs.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>August 7 AI-Power Mining Traffic Sprint</title>
+      <link>https://blockoddslabs.com/traffic-sprint.html#august-7-morning-angle</link>
+      <guid>https://blockoddslabs.com/traffic-sprint.html#august-7-morning-angle</guid>
+      <pubDate>Fri, 07 Aug 2026 14:55:00 GMT</pubDate>
+      <description>Refreshed the traffic sprint around miner-to-AI power economics, the small-miner version of hashrate/watts/difficulty math, and the Gamma route into the canonical TikTok product video.</description>
+    </item>
+    <item>
+      <title>August 6 Difficulty Drop Traffic Sprint</title>
+      <link>https://blockoddslabs.com/traffic-sprint.html#august-6-afternoon-angle</link>
+      <guid>https://blockoddslabs.com/traffic-sprint.html#august-6-afternoon-angle</guid>
+      <pubDate>Thu, 06 Aug 2026 20:55:00 GMT</pubDate>
+      <description>Refreshed the traffic sprint around the current Bitcoin difficulty-drop conversation, the "easier is not easy" home-mining angle, and the Gamma route into the canonical TikTok product video.</description>
+    </item>
     <item>
       <title>August 1 Bitaxe Gamma Buyer Route</title>
       <link>https://blockoddslabs.com/share-kit.html#august-1-gamma-buyer-route</link>
