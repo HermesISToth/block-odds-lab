@@ -28,6 +28,23 @@ Block Odds Lab helps hobby miners estimate expected time to find a Bitcoin block
 - RSS feed: https://blockoddslabs.com/feed.xml
 - Substack notes: https://blockoddslabs.substack.com/
 
+## August 9, 2026 Bitaxe Jackpot Math Push
+
+- August 9 has 117 unique visitors and 111 page views by 12:59 PM ET, behind August 8's 165 uniques and 205 page views.
+- Fresh article: https://blockoddslabs.substack.com/p/the-bitaxe-jackpot-is-real-so-is
+- Use https://blockoddslabs.com/#august-9-bitaxe-jackpot-route as the homepage bridge for the new article, the Bitaxe jackpot odds page, Gamma odds, and the direct miner demo.
+- Use https://blockoddslabs.com/traffic-sprint.html#august-9-bitaxe-jackpot-angle for copy-ready social replies and distribution routing.
+- Use https://www.tiktok.com/@donkey.digital/video/7661637482294824223 as the canonical Star Bitaxe Gamma 601 Smart Edition product video.
+- Keep the frame: a small-miner jackpot can happen, but hashrate, watts, uptime, and difficulty should come before any buying decision.
+
+## August 8, 2026 Gamma Sales Push
+
+- August 8 has 113 unique visitors and 151 page views by 11:16 AM ET.
+- Homepage remains the main landing surface with 41 visits today, while https://blockoddslabs.com/bitaxe-gamma-odds.html has early visits but is still URL unknown to Google.
+- Route homepage visitors with Bitaxe Gamma buying intent through https://blockoddslabs.com/#august-8-gamma-route, https://blockoddslabs.com/bitaxe-gamma-odds.html, https://blockoddslabs.com/bitaxe-odds-calculator.html, https://blockoddslabs.com/lottery-mining-starter-kit.html, and the direct product video.
+- Use https://www.tiktok.com/@donkey.digital/video/7661637482294824223 as the canonical Star Bitaxe Gamma 601 Smart Edition product video.
+- Keep the claim frame conservative: the Gamma is a learning, tuning, and content-friendly small ASIC; it is not predictable income.
+
 ## August 1, 2026 Gamma Sales Push
 
 - August 1 has 86 unique visitors and 95 page views by 9:16 AM ET, after July 31 closed at 230 uniques and 434 page views.

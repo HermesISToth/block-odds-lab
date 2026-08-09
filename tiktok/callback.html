@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TikTok Authorization Callback | Block Odds Lab</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#0b0d10">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../index.html" aria-label="Block Odds Lab home">
+        <span class="brand-mark">B</span>
+        <span>Block Odds Lab</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="section legal-page">
+        <p class="eyebrow">TikTok</p>
+        <h1>Authorization Callback</h1>
+        <p id="status">Reading TikTok response...</p>
+        <pre id="code" style="white-space: pre-wrap; word-break: break-word;"></pre>
+      </section>
+    </main>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get('code');
+      const error = params.get('error');
+      const status = document.getElementById('status');
+      const output = document.getElementById('code');
+
+      if (code) {
+        status.textContent = 'TikTok returned an authorization code. Use it with the local CLI exchange-code command.';
+        output.textContent = code;
+      } else if (error) {
+        status.textContent = 'TikTok returned an authorization error.';
+        output.textContent = `${error}\n${params.get('error_description') || ''}`;
+      } else {
+        status.textContent = 'No authorization code was found in the URL.';
+      }
+    </script>
+  </body>
+</html>
