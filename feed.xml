@@ -5,8 +5,15 @@
     <link>https://blockoddslabs.com/</link>
     <description>Bitcoin lottery-mining odds, Bitaxe and NerdMiner calculators, and practical solo mining guides.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Aug 2026 17:10:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 15:25:00 GMT</lastBuildDate>
     <atom:link href="https://blockoddslabs.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>August 13 Bitaxe Gamma Buyer Intent Route</title>
+      <link>https://blockoddslabs.com/traffic-sprint.html#august-13-gamma-buyer-intent</link>
+      <guid>https://blockoddslabs.com/traffic-sprint.html#august-13-gamma-buyer-intent</guid>
+      <pubDate>Thu, 13 Aug 2026 15:25:00 GMT</pubDate>
+      <description>Refreshed the traffic sprint around homepage-heavy traffic, the discovered-but-not-indexed Gamma odds route, and the direct Bitaxe Gamma product video after hashrate, watts, uptime, and difficulty checks.</description>
+    </item>
     <item>
       <title>August 9 Bitaxe Jackpot Math Route</title>
       <link>https://blockoddslabs.com/traffic-sprint.html#august-9-bitaxe-jackpot-angle</link>
