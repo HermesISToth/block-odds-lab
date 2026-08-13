@@ -758,6 +758,59 @@ footer p:last-child {
   font-size: clamp(1.35rem, 2vw, 1.9rem);
 }
 
+.dd-page {
+  max-width: 980px;
+}
+
+.visible-policy-links a,
+.dd-page a:not(.brand) {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.dd-panel-grid,
+.dd-flow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.dd-panel-grid article,
+.dd-flow article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: clamp(18px, 3vw, 24px);
+  background: var(--panel);
+}
+
+.dd-panel-grid h2,
+.dd-flow h2 {
+  margin-top: 0;
+}
+
+.dd-flow span {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #161008;
+  font-weight: 850;
+}
+
+.dd-steps,
+.dd-list {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 24px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
 .article-page h3 {
   margin-top: 26px;
 }
@@ -1002,6 +1055,8 @@ footer p {
   .faq-list,
   .decision-grid,
   .related-grid,
+  .dd-panel-grid,
+  .dd-flow,
   .results,
   .upgrade-results,
   .difficulty-live,

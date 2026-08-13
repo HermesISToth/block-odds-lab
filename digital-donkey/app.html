@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App Flow | Digital Donkey</title>
+    <meta name="description" content="Digital Donkey app flow for TikTok Login Kit authorization and Content Posting API video publishing.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b0d10">
+    <link rel="canonical" href="https://blockoddslabs.com/digital-donkey/app.html">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Digital Donkey home">
+        <span class="brand-mark">D</span>
+        <span>Digital Donkey</span>
+      </a>
+      <nav aria-label="Digital Donkey navigation">
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://www.tiktok.com/@donkey.digital" rel="noopener">TikTok</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section legal-page dd-page">
+        <p class="eyebrow">App Flow</p>
+        <h1>TikTok authorization and posting review</h1>
+        <p class="lede">
+          Digital Donkey keeps publishing actions behind operator review. The app requests TikTok access only when an approved operator connects the @donkey.digital creator account for a specific business publishing workflow.
+        </p>
+        <p class="visible-policy-links">
+          <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a>
+        </p>
+      </section>
+
+      <section class="section dd-page">
+        <div class="dd-flow">
+          <article>
+            <span>1</span>
+            <h2>Prepare</h2>
+            <p>Review the product footage, vertical export, audio, caption, disclosure language, and product-card evidence before any TikTok action.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h2>Authorize</h2>
+            <p>Open TikTok Login Kit, request only the needed scopes, and return to the verified Digital Donkey callback URL after the creator account grants access.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h2>Confirm</h2>
+            <p>Read creator posting settings and privacy options. The operator sees the selected video, caption, and intended posting mode before submission.</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h2>Publish or upload</h2>
+            <p>Use Content Posting API upload or direct-post workflows only for reviewed content. TikTok Studio remains available for exact Shop product-card verification.</p>
+          </article>
+          <article>
+            <span>5</span>
+            <h2>Audit</h2>
+            <p>Log the media file, caption, product-card note, TikTok publish status, timestamp, and any manual checks so the creator can verify the post later.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section legal-page dd-page">
+        <h2>Requested TikTok scopes</h2>
+        <ul class="dd-list">
+          <li><strong>user.info.basic:</strong> confirm the connected creator identity before publishing work is performed.</li>
+          <li><strong>video.upload:</strong> upload approved video content for creator review where manual TikTok completion is required.</li>
+          <li><strong>video.publish:</strong> test and use direct post only after the creator grants access and the workflow passes review.</li>
+        </ul>
+
+        <h2>Callback URL</h2>
+        <p>
+          The TikTok OAuth redirect URI is <a href="tiktok/callback.html">https://blockoddslabs.com/digital-donkey/tiktok/callback.html</a>. The callback page displays the authorization result for the operator and does not sell, share, or expose TikTok account data.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

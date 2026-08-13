@@ -27,6 +27,10 @@ Block Odds Lab helps hobby miners estimate expected time to find a Bitcoin block
 - White paper: https://blockoddslabs.com/white-paper.html
 - RSS feed: https://blockoddslabs.com/feed.xml
 - Substack notes: https://blockoddslabs.substack.com/
+- Digital Donkey TikTok Shop workflow: https://blockoddslabs.com/digital-donkey/
+- Digital Donkey app flow: https://blockoddslabs.com/digital-donkey/app.html
+- Digital Donkey Terms: https://blockoddslabs.com/digital-donkey/terms.html
+- Digital Donkey Privacy: https://blockoddslabs.com/digital-donkey/privacy.html
 
 ## August 9, 2026 Bitaxe Jackpot Math Push
 

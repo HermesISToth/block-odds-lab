@@ -1,4 +1,4 @@
-const CACHE_NAME = "block-odds-lab-v63";
+const CACHE_NAME = "block-odds-lab-v64";
 const ASSETS = [
   "./",
   "./index.html",
@@ -9,6 +9,12 @@ const ASSETS = [
   "./white-paper.html",
   "./notes.html",
   "./share-kit.html",
+  "./digital-donkey/",
+  "./digital-donkey/index.html",
+  "./digital-donkey/app.html",
+  "./digital-donkey/terms.html",
+  "./digital-donkey/privacy.html",
+  "./digital-donkey/tiktok/callback.html",
   "./traffic-sprint.html",
   "./cold-wallets.html",
   "./bitcoin-lottery-mining-faq.html",
