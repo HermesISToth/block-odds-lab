@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Expected Time Is Not A Countdown</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    body { margin: 0; background: #101820; color: #f7f2e8; display: grid; min-height: 100vh; place-items: center; }
+    main { width: min(1000px, calc(100vw - 32px)); }
+    h1 { font-size: clamp(2rem, 5vw, 4.8rem); line-height: .95; margin: 0 0 18px; }
+    p { color: #cfd4d8; font-size: clamp(1rem, 2vw, 1.35rem); max-width: 760px; }
+    .track { margin: 42px 0 28px; height: 26px; border-radius: 999px; background: #313942; overflow: hidden; outline: 1px solid #56616c; }
+    .bar { height: 100%; width: 40%; border-radius: inherit; background: linear-gradient(90deg, #d24b38, #f2a900); animation: fake 4s ease-in-out infinite; }
+    @keyframes fake { 0%, 100% { width: 8%; } 50% { width: 78%; } }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 28px; }
+    .card { background: #f7f2e8; color: #15191d; border-radius: 18px; padding: 18px; min-height: 132px; }
+    .label { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: #66707a; font-weight: 800; }
+    .big { display: block; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 900; margin-top: 8px; }
+    a { color: #ffd25a; font-weight: 800; }
+    @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Expected time is not a countdown.</h1>
+    <p>The moving bar below is the trap: it feels like progress, but solo mining does not work that way. Every hash is a fresh attempt against the current Bitcoin target.</p>
+    <div class="track" aria-label="Animated fake countdown bar"><div class="bar"></div></div>
+    <div class="grid">
+      <section class="card"><span class="label">Wrong question</span><span class="big">When am I due?</span></section>
+      <section class="card"><span class="label">Better question</span><span class="big">What are my current odds?</span></section>
+      <section class="card"><span class="label">Run the math</span><span class="big"><a href="/bitaxe-gamma-odds.html">Gamma odds calculator</a></span></section>
+    </div>
+  </main>
+</body>
+</html>

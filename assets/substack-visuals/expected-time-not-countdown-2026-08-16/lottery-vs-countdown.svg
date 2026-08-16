@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Expected time is not a countdown</title>
+  <desc id="desc">A visual comparison showing that running longer does not fill a progress bar toward a Bitcoin block; each hash is a new lottery attempt against current difficulty.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#101820"/>
+      <stop offset="1" stop-color="#20242a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffd25a"/>
+      <stop offset="1" stop-color="#f2a900"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect x="48" y="48" width="1104" height="579" rx="30" fill="#f7f2e8" filter="url(#shadow)"/>
+  <text x="92" y="112" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800" fill="#121417">Expected Time Is Not A Countdown</text>
+  <text x="94" y="153" font-family="Inter, Arial, sans-serif" font-size="24" fill="#414851">Small miners do not build progress toward a block. Every hash starts fresh.</text>
+
+  <rect x="92" y="202" width="474" height="302" rx="22" fill="#ffffff" stroke="#d9d1c3"/>
+  <text x="124" y="257" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#222">Wrong mental model</text>
+  <text x="124" y="295" font-family="Inter, Arial, sans-serif" font-size="22" fill="#5d6570">"I have been mining for days,</text>
+  <text x="124" y="324" font-family="Inter, Arial, sans-serif" font-size="22" fill="#5d6570">so I must be getting closer."</text>
+  <rect x="124" y="368" width="380" height="34" rx="17" fill="#e8e0d2"/>
+  <rect x="124" y="368" width="258" height="34" rx="17" fill="#d24b38"/>
+  <text x="124" y="440" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#d24b38">Problem: there is no hidden progress bar.</text>
+
+  <rect x="634" y="202" width="474" height="302" rx="22" fill="#ffffff" stroke="#d9d1c3"/>
+  <text x="666" y="257" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#222">Useful mental model</text>
+  <text x="666" y="295" font-family="Inter, Arial, sans-serif" font-size="22" fill="#5d6570">Every hash is a fresh lottery ticket</text>
+  <text x="666" y="324" font-family="Inter, Arial, sans-serif" font-size="22" fill="#5d6570">against current network difficulty.</text>
+  <g transform="translate(666 358)">
+    <circle cx="22" cy="22" r="22" fill="#f2a900"/>
+    <circle cx="86" cy="22" r="22" fill="#f2a900"/>
+    <circle cx="150" cy="22" r="22" fill="#f2a900"/>
+    <circle cx="214" cy="22" r="22" fill="#f2a900"/>
+    <circle cx="278" cy="22" r="22" fill="#f2a900"/>
+    <text x="10" y="31" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#141414">?</text>
+    <text x="74" y="31" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#141414">?</text>
+    <text x="138" y="31" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#141414">?</text>
+    <text x="202" y="31" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#141414">?</text>
+    <text x="266" y="31" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#141414">?</text>
+  </g>
+  <text x="666" y="440" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#217047">Fix: use fresh hashrate, uptime, watts, and difficulty.</text>
+
+  <rect x="92" y="540" width="1016" height="48" rx="24" fill="#14171a"/>
+  <text x="126" y="572" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#fff">Buying rule: if the block never happens, would this still be worth owning as a learning machine?</text>
+</svg>
